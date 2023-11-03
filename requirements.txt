@@ -4,3 +4,5 @@ cohere
 tiktoken
 replicate
 openai
+gspread
+google-auth

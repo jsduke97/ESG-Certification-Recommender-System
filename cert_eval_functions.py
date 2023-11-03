@@ -15,6 +15,9 @@ import streamlit as st
 import altair as alt
 import openai
 
+from google.oauth2 import service_account
+import gspread
+
 def num_tokens_from_string(string: str, encoding_name: str) -> int:
     """Returns the number of tokens in a text string."""
     encoding = tiktoken.get_encoding(encoding_name)
@@ -40,14 +43,40 @@ def log_response(current_log: pd.DataFrame, product_df: pd.DataFrame, mandate_df
     current_log.loc[current_log.shape[0] + 1] = [id, name, category_id, category_label, certs, cert, mandate_no, mandate_title, 
                                                 mandate_desc, llm_prompt, llm_response_full, llm_response, LLM, datetime.now()]
 
+def find_last_filled_row(worksheet):
+    return len(worksheet.get_all_values()) + 1
+
 def save_recommendation(file_path: str, new_recommendation: pd.DataFrame):
     # id | name | category_id | category_label | Sustainability certificates.42513 | 
     # Certification | Mandate Number | Mandate title | Mandate Description |
     # prompt | response | recommendation | model | rec_datetime
 
-    df = pd.read_csv(file_path)
-    df = pd.concat([new_recommendation, df])
-    df.to_csv(file_path, index = False)
+    # Create a connection object.
+    credentials = service_account.Credentials.from_service_account_info(
+        st.secrets["gcp_service_account"],
+        scopes=[
+            "https://www.googleapis.com/auth/spreadsheets",
+        ],
+    )
+    gc = gspread.authorize(credentials)
+
+    sheet_url = st.secrets["spreadsheet1"]
+    sheet = gc.open_by_url(sheet_url)
+
+    conn = st.connection("gsheets", type=GSheetsConnection)
+
+    worksheet = sheet.get_worksheet(0)  # Replace 0 with the index of your desired worksheet
+    values = dataframe.values.tolist()
+
+    # Find the last filled row
+    last_filled_row = find_last_filled_row(worksheet)
+
+    # Insert the data after the last filled row
+    worksheet.insert_rows(values, last_filled_row)
+
+    #df = pd.read_csv(file_path)
+    #df = pd.concat([new_recommendation, df])
+    #df.to_csv(file_path, index = False)
 
 def prepare_mandate_query(mandate_df: pd.DataFrame, product: pd.DataFrame):
     # Take in the mandate information and columns relevant to the mandate, 
