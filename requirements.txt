@@ -1,8 +1,4 @@
-streamlit
-pandas
-st_aggrid
-os
-numpy
+streamlit-aggrid
 streamlit_js_eval
 json
 altair
