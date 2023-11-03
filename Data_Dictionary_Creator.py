@@ -5,7 +5,6 @@ import os
 import numpy as np
 import data_dictionary_functions as ddf
 from streamlit_js_eval import streamlit_js_eval
-import json
 import time
 
 st.markdown('# Data Dictionary Creator')

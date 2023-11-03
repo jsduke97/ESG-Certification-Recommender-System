@@ -10,7 +10,6 @@ from datetime import datetime
 import tiktoken
 
 import replicate
-import json
 import streamlit as st
 
 import altair as alt

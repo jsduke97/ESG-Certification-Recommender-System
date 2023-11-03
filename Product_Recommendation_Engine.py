@@ -5,7 +5,6 @@ import os
 import numpy as np
 import cert_eval_functions as cef
 from streamlit_js_eval import streamlit_js_eval
-import json
 import time
 import altair as alt
 

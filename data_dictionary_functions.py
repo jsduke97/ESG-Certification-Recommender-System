@@ -10,7 +10,6 @@ from datetime import datetime
 import tiktoken
 
 import replicate
-import json
 import streamlit as st
 
 def num_tokens_from_string(string: str, encoding_name: str) -> int:
