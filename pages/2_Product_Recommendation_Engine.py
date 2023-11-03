@@ -35,7 +35,7 @@ def set_page(page):
     st.session_state.page = page
 
 def set_page_save(page, detail_df, file_path):
-    cef.save_recommendation(file_path, detail_df)
+    cef.save_recommendation(file_path, detail_df, "full")
     st.session_state.page = None
     st.session_state.product = []
     st.session_state.rec = None
@@ -105,7 +105,7 @@ if st.session_state.page == "Generate New":
             progress_text = "Querying {} for {} recommendation...{} out of {} complete."
             cert_progress = st.progress(0, text=progress_text.format(LLM, cert, 0, mandates_cert.shape[0]))
             start_time = time.time()
-            for mandate in range(mandates_cert.shape[0]):
+            for mandate in range(1):#mandates_cert.shape[0]):
 
                 mandate_df = mandates_cert.iloc[[mandate]]
                 mandate_column_df = mandate_column_full_df[mandate_column_full_df["Certification"] == cert]
@@ -151,7 +151,7 @@ if st.session_state.page == "Generate New":
                 summary_df = pd.DataFrame([[st.session_state.product[0], LLM, cert, passed, failed, na, rec_per, round(elapsed_time), 0]],
                             columns = ["product", "model", "cert", "mandates passed", "mandates failed", "mandates na", "percentage_passed", "time", "cost"])
 
-                cef.save_recommendation(st.session_state.summary_path, summary_df)
+                cef.save_recommendation(st.session_state.summary_path, summary_df, "summary")
                 output_data.append(rec_per)
                 cert_cols_i += 1
 

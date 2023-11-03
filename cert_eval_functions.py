@@ -27,7 +27,7 @@ def num_tokens_from_string(string: str, encoding_name: str) -> int:
 def log_response(current_log: pd.DataFrame, product_df: pd.DataFrame, mandate_df: pd.DataFrame, llm_prompt: str, llm_response_full: str, llm_response: str, LLM: str):
     # id | name | category_id | category_label | Sustainability certificates.42513 | 
     # Certification | Mandate Number | Mandate title | Mandate Description |
-    # prompt | response | recommendation | model | rec_datetime
+    # prompt | response | recommendation | model
     
     id = product_df["id"].item()
     name = product_df["name"].item()
@@ -41,15 +41,15 @@ def log_response(current_log: pd.DataFrame, product_df: pd.DataFrame, mandate_df
     mandate_desc = mandate_df["Mandate Description"].item()
 
     current_log.loc[current_log.shape[0] + 1] = [id, name, category_id, category_label, certs, cert, mandate_no, mandate_title, 
-                                                mandate_desc, llm_prompt, llm_response_full, llm_response, LLM, datetime.now()]
+                                                mandate_desc, llm_prompt, llm_response_full, llm_response, LLM]
 
 def find_last_filled_row(worksheet):
     return len(worksheet.get_all_values()) + 1
 
-def save_recommendation(file_path: str, new_recommendation: pd.DataFrame):
+def save_recommendation(file_path: str, new_recommendation: pd.DataFrame, sheet: str):
     # id | name | category_id | category_label | Sustainability certificates.42513 | 
     # Certification | Mandate Number | Mandate title | Mandate Description |
-    # prompt | response | recommendation | model | rec_datetime
+    # prompt | response | recommendation | model
 
     # Create a connection object.
     credentials = service_account.Credentials.from_service_account_info(
@@ -60,13 +60,14 @@ def save_recommendation(file_path: str, new_recommendation: pd.DataFrame):
     )
     gc = gspread.authorize(credentials)
 
-    sheet_url = st.secrets["spreadsheet1"]
+    if sheet == "summary":
+        sheet_url = st.secrets["spreadsheet2"]
+    elif sheet == "full":
+        sheet_url = st.secrets["spreadsheet1"]
     sheet = gc.open_by_url(sheet_url)
 
-    conn = st.connection("gsheets", type=GSheetsConnection)
-
     worksheet = sheet.get_worksheet(0)  # Replace 0 with the index of your desired worksheet
-    values = dataframe.values.tolist()
+    values = new_recommendation.values.tolist()
 
     # Find the last filled row
     last_filled_row = find_last_filled_row(worksheet)
