@@ -1,0 +1,6 @@
+product,model,cert,mandates passed,mandates failed,mandates na,percentage_passed,time,cost
+3480,GPT-3.5,TCO,5,2,10,71,178,0.01
+3480,Cohere,Energy Star,0,7,2,0,30,0
+3480,Cohere,TCO,3,5,9,38,108,0
+3460,LLaMA2,TCO,0,15,2,0,253,0.3
+3460,LLaMA2,Energy Star,0,9,0,0,180,0.2

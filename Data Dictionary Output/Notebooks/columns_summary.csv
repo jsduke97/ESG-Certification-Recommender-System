@@ -1,0 +1,1227 @@
+column_cleaned,column_values,column_unit,column_min,column_max
+Processor cache,"'8.0', '6.0', '12.0', '3.0', '2.0'",MB,1.0,12.0
+Numeric keypad,'False',N/A,N/A,N/A
+Processor manufacturer,"'Intel', 'AMD', 'Qualcomm'",N/A,N/A,N/A
+Idle States,'False',N/A,N/A,N/A
+Intel Trusted Execution Technology,'False',N/A,N/A,N/A
+Built-in microphone,'False',N/A,N/A,N/A
+CPU configuration (max),'1.0',N/A,1.0,1.0
+Intel VT-x with Extended Page Tables (EPT),'False',N/A,N/A,N/A
+Embedded options available,'False',N/A,N/A,N/A
+Keyboard backlit,'False',N/A,N/A,N/A
+Optical drive type,"'N', 'DVDÂ±RW', 'DVDÂ±R'",N/A,N/A,N/A
+Memory layout (slots x size),"'1 x 4', '1 x 8', '2 x 8', '2 x 4'",N/A,N/A,N/A
+Internal memory,"'8.0', '16.0', '4.0', '32.0', '2.0'",GB,2.0,32.0
+Native aspect ratio,"'3:02', '16:09', '16:10'",N/A,N/A,N/A
+HD type,"'HD', 'Full HD', 'HD+', 'Quad HD', 'WQXGA'",N/A,N/A,N/A
+Storage media,"'SSD', 'HDD', 'eMMC', 'Hybrid-HDD', 'Flash'",N/A,N/A,N/A
+Bluetooth version,"'5.0', '4.1', '5.1', '4.0', '5.2'",N/A,4.0,5.2
+Number of battery cells,"'4.0', '6.0', '3.0', '2.0'",N/A,2.0,6.0
+Front camera,'False',N/A,N/A,N/A
+Ethernet LAN,'False',N/A,N/A,N/A
+Product type,"'Notebook', 'Hybrid (2-in-1)', 'Chromebook'",N/A,N/A,N/A
+Height,"'14.5', '15.69', '22.9', '14.7', '24.9'",mm,11.176,202.3
+Antenna type,"'2x2', '1x1'",N/A,N/A,N/A
+Display resolution,"'2256 x 1504', '1536 x 1024', '1366 x 768', '2496 x 1664', '1920 x 1080'",pixels,N/A,N/A
+Width,"'278.18', '308.0', '380.0', '339.5', '305.0'",mm,224.8,418.0
+Depth,"'223.0', '205.67', '262.0', '224.0', '292.6'",mm,16.7,323.9
+Speaker power,"'1.5', '2.0', '4.0', '5.0', '1.2'",W,1.2,10.0
+Intel Stable Image Platform Program (SIPP),'False',N/A,N/A,N/A
+Product colour,"'Black', 'Platinum', 'Blue', 'Sand', 'Silver'",N/A,N/A,N/A
+Discrete graphics adapter memory,"'2.0', '4.0'",GB,2.0,4.0
+Number of built-in speakers,"'2.0', '1.0', '4.0'",N/A,1.0,4.0
+Intel Virtualization Technology for Directed I/O (VT-d),'False',N/A,N/A,N/A
+Intel Software Guard Extensions (Intel SGX),'False',N/A,N/A,N/A
+Configurable TDP-down,"'12.0', '13.0', '7.5', '10.0', '28.0'",W,7.5,28.0
+Processor cache type,"'Smart Cache', 'L3', 'L2', 'L2 & L3'",N/A,N/A,N/A
+Configurable TDP-down frequency,"'0.7', '1.2', '0.8', '1.1', '0.9'",GHz,0.7,2.6
+Configurable TDP-up frequency,"'1.2', '3.0', '2.6', '2.4', '2.7'",GHz,1.2,3.1
+Configurable TDP-up,"'28.0', '25.0', '35.0'",W,25.0,35.0
+Intel Virtualization Technology (VT-x),'False',N/A,N/A,N/A
+Bluetooth,'False',N/A,N/A,N/A
+Processor family,"'Intel Core i5', 'Intel Core i7', 'Intel Core i3', 'AMD Ryzen 7', 'AMD Ryzen 5'",N/A,N/A,N/A
+USB 3.2 Gen 1 (3.1 Gen 1) Type-A ports quantity,"'1.0', '2.0'",N/A,1.0,2.0
+Mobile network connection,'False',N/A,N/A,N/A
+Top Wi-Fi standard,"'Wi-Fi 6 (802.11ax)', 'Wi-Fi 5 (802.11ac)', 'Wi-Fi 6E (802.11ax)', 'Wi-Fi 4 (802.11n)'",N/A,N/A,N/A
+WLAN controller model,'Intel Wi-Fi 6 AX201',N/A,N/A,N/A
+Processor ARK ID,"'196603.0', '91157.0', '95443.0', '88193.0', '95598.0'",N/A,65697.0,196603.0
+Discrete graphics adapter,'False',N/A,N/A,N/A
+Video capturing speed,'30.0',fps,30.0,30.0
+Memory clock speed,"'3733.0', '2133.0', '2400.0', '1600.0', '3200.0'",MHz,1600.0,4266.0
+USB Type-C DisplayPort Alternate Mode,'False',N/A,N/A,N/A
+Operating system installed,"'Windows 10 Pro', 'Windows 10 Home', 'Windows 10 Home S', 'FreeDOS', 'N'",N/A,N/A,N/A
+Total storage capacity,"'256', '512', '128', '500', '1000'",GB,32,1000
+Card reader integrated,'False',N/A,N/A,N/A
+Front camera HD type,"'HD', 'Full HD'",N/A,N/A,N/A
+HDMI ports quantity,'1.0',N/A,1.0,1.0
+Keyboard backlit colour,'White',N/A,N/A,N/A
+Total SSDs capacity,"'512.0', '256.0', '128.0', '1000.0', '64.0'",GB,64.0,1000.0
+NVIDIA Max-Q,,N/A,nan,nan
+WLAN controller manufacturer,'Intel',N/A,N/A,N/A
+USB4 Gen 2x2 ports quantity,'1.0',N/A,1.0,1.0
+Internal memory type,"'LPDDR4x-SDRAM', 'DDR4-SDRAM', 'DDR3L-SDRAM', 'LPDDR4-SDRAM', 'DDR3-SDRAM'",N/A,N/A,N/A
+Wi-Fi standards,"'Wi-Fi 6 (802.11ax)', '802.11a', 'Wi-Fi 5 (802.11ac)', '802.11b', 'Wi-Fi 4 (802.11n)'",N/A,N/A,N/A
+Battery technology,"'Lithium-Ion (Li-Ion)', 'Lithium Polymer (LiPo)'",N/A,N/A,N/A
+Pointing device,"'Touchpad', 'Trackpad', 'Clickpad', 'ThinkPad UltraNav'",N/A,N/A,N/A
+Processor model,"'i5-1035G1', 'i7-1185G7', 'i5-1145G7', '4980U', 'i3-6006U'",N/A,N/A,N/A
+Touchscreen,'False',N/A,N/A,N/A
+SSD interface,"'NVMe', 'SATA III', 'M.2'",N/A,N/A,N/A
+SSD capacity,"'256.0', '512.0', '128.0', '1000.0', '64.0'",GB,64.0,1000.0
+Processor cores,"'4.0', '2.0', '8.0', '6.0', '5.0'",N/A,2.0,8.0
+CUDA,,N/A,nan,nan
+Memory slots,"'1x SO-DIMM', '2x SO-DIMM'",N/A,N/A,N/A
+Compatible memory cards,"'MMC', 'MicroSD (TransFlash)'",N/A,N/A,N/A
+Maximum refresh rate,,N/A,nan,nan
+Number of SSDs installed,'1.0',N/A,1.0,1.0
+Memory form factor,"'On-board', 'On-board + SO-DIMM', 'SO-DIMM'",N/A,N/A,N/A
+Form factor,"'Clamshell', 'Convertible (Folder)', 'Convertible (Floating Slider)'",N/A,N/A,N/A
+Processor boost frequency,"'3.6', '4.8', '4.4', '4.2', '4.0'",GHz,2.2,4.9
+Battery capacity (Watt-hours),"'47.4', '40.98', '32.0', '49.4', '39.0'",Wh,24.0,80.0
+On-board graphics adapter model,"'Intel Iris Xe Graphics', 'Intel UHD Graphics', 'AMD Radeon Graphics', 'Intel HD Graphics 520', 'Intel HD Graphics 620'",N/A,N/A,N/A
+Discrete graphics adapter model,"'Not available', 'AMD Radeon R5 M430', 'AMD Radeon 530', 'NVIDIA GeForce GTX 1650 Ti', 'NVIDIA GeForce MX330'",N/A,N/A,N/A
+Discrete graphics memory type,"'GDDR6', 'GDDR5'",N/A,N/A,N/A
+AC adapter power,"'65.0', '39.0', '45.0', '25.0', '30.0'",W,25.0,95.0
+Weight,"'1110.0', '1900.0', '1542.0', '1265.0', '1288.0'",g,870.0,2790.0
+Display diagonal,"'13.5', '12.45', '15.6', '15.0', '17.3'","""",11.6,17.3
+Combo headphone/mic port,'False',N/A,N/A,N/A
+On-board graphics adapter,'False',N/A,N/A,N/A
+Intel Quick Sync Video Technology,'False',N/A,N/A,N/A
+Intel AES New Instructions (Intel AES-NI),'False',N/A,N/A,N/A
+Execute Disable Bit,'False',N/A,N/A,N/A
+Thermal Monitoring Technologies,'False',N/A,N/A,N/A
+On-board graphics adapter base frequency,"'300.0', '200.0', '350.0'",MHz,200.0,350.0
+On-board graphics adapter dynamic frequency (max),"'1050.0', '1000.0', '900.0', '650.0', '950.0'",MHz,650.0,1150.0
+Tjunction,"'100.0', '105.0'",°C,100.0,105.0
+Processor frequency,"'1.0', '2.0', '2.5', '2.1', '1.1'",GHz,1.0,3.0
+Thermal Design Power (TDP),"'15.0', '6.0', '17.0'",W,6.0,17.0
+Cable lock slot,'False',N/A,N/A,N/A
+Front camera resolution,'1280 x 720',pixels,N/A,N/A
+Cable lock slot type,'Kensington',N/A,N/A,N/A
+Keyboard layout,"'QWERTY', 'QWERTZ', 'AZERTY'",N/A,N/A,N/A
+Maximum internal memory,"'8.0', '16.0', '4.0', '32.0', '12.0'",GB,4.0,32.0
+Intel TSX-NI,'False',N/A,N/A,N/A
+Intel Secure Key,'False',N/A,N/A,N/A
+Panel type,"'AMOLED', 'IPS', 'QLED', 'PLS', 'TN'",N/A,N/A,N/A
+Intel 64,'False',N/A,N/A,N/A
+Processor lithography,"'10.0', '14.0', '22.0', '28.0', '32.0'",nm,10.0,32.0
+Display surface,"'Matt', 'Gloss'",N/A,N/A,N/A
+Battery life (max),"'13.0', '17.0', '16.5', '5.5', '19.0'",h,4.0,21.0
+Intel OS Guard,'False',N/A,N/A,N/A
+On-board graphics adapter ID,"'0x8A56', '1916', '0x5916', '0x5A85', '0x5A84'",N/A,N/A,N/A
+SSD form factor,"'M.2', '2.5""'",N/A,N/A,N/A
+On-board graphics adapter DirectX version,'12.0',N/A,12.0,12.0
+On-board graphics adapter OpenGL version,"'4.5', '4.4'",N/A,4.4,4.5
+Processor package size,"'50 x 25', '42 x 24', '24 x 31', '42 X 24', '31 x 24 (BGA1023)'",mm,N/A,N/A
+USB 3.2 Gen 1 (3.1 Gen 1) Type-C ports quantity,"'1.0', '2.0'",N/A,1.0,2.0
+USB 2.0 ports quantity,"'1.0', '2.0'",N/A,1.0,2.0
+Ethernet LAN (RJ-45) ports,'1.0',N/A,1.0,1.0
+Headphone outputs,"'1.0', '10.0'",N/A,1.0,10.0
+Processor socket,"'BGA 1526', 'BGA 1356', 'BGA 1296', 'LGA 1356 (Socket B2)', 'Socket FP4'",N/A,N/A,N/A
+Bundled software,"'McAfee Security Center', 'Link Sharing\nLive Message\nLive Wallpaper\nScreen Recorder\nSamsung Gallery\nQuick Search\nSamsung DeX\nSamsung Flow\nSamsung Notes\nSamsung Recovery\nSamsung Settings\nStudio Plus\nSamsung Update'",N/A,N/A,N/A
+On-board graphics adapter family,"'Intel UHD Graphics', 'Intel Iris Xe', 'Intel HD Graphics', 'AMD Radeon', 'Intel Iris Xe Graphics'",N/A,N/A,N/A
+Supported instruction sets,"'AVX 2.0', 'SSE4.1', 'AVX'",N/A,N/A,N/A
+Fingerprint reader,'False',N/A,N/A,N/A
+Ethernet LAN data rates,'10.0',N/A,10.0,10.0
+Trial software,"'Office Trial', 'McAfee LiveSafe, Microsoft Office', 'McAfee LiveSafe', 'Microsoft 365', 'Microsoft 365 Family'",N/A,N/A,N/A
+LED backlight,'False',N/A,N/A,N/A
+System bus rate,"'4.0', '5.0'",GT/s,4.0,5.0
+Number of microphones,"'2.0', '1.0', '4.0'",N/A,1.0,4.0
+Processor threads,"'8.0', '4.0', '2.0'",N/A,2.0,8.0
+Operating system architecture,'64-bit',N/A,N/A,N/A
+PCI Express slots version,"'3.0', '2.0'",N/A,2.0,3.0
+Processor operating modes,'64-bit',N/A,N/A,N/A
+Keyboard language,"'German', 'Swiss', 'International EER', 'English', 'Italian'",N/A,N/A,N/A
+Battery capacity,"'5403.0', '6513.0', '4405.0', '4081.0', '5070.0'",mAh,4081.0,6513.0
+Intel Hyper Threading Technology (Intel HT Technology),'False',N/A,N/A,N/A
+Intel Turbo Boost Technology,"'2', 'N'",N/A,N/A,N/A
+Intel InTru 3D Technology,'False',N/A,N/A,N/A
+Intel Wireless Display (Intel WiDi),'False',N/A,N/A,N/A
+Intel Clear Video HD Technology (Intel CVT HD),'False',N/A,N/A,N/A
+Intel Flex Memory Access,'False',N/A,N/A,N/A
+Enhanced Intel SpeedStep Technology,'False',N/A,N/A,N/A
+Intel Enhanced Halt State,'False',N/A,N/A,N/A
+Intel Clear Video Technology for Mobile Internet Devices (Intel CVT for MID),'False',N/A,N/A,N/A
+Bus type,"'OPI', 'QPI', 'DMI'",N/A,N/A,N/A
+PCI Express configurations,"'1x2+2x1', '1x4', '1x2', '1x16'",N/A,N/A,N/A
+Intel Small Business Advantage (Intel SBA),'False',N/A,N/A,N/A
+AC adapter included,'False',N/A,N/A,N/A
+Password protection,'False',N/A,N/A,N/A
+Processor codename,"'Skylake', 'Kaby Lake', 'Apollo Lake', 'Ivy Bridge', 'Comet Lake'",N/A,N/A,N/A
+Maximum number of PCI Express lanes,"'12.0', '6.0', '10.0', '16.0'",N/A,6.0,16.0
+Intel Clear Video Technology,'False',N/A,N/A,N/A
+Intel Identity Protection Technology version,'1.0',N/A,1.0,1.0
+Intel Secure Key Technology version,'1.0',N/A,1.0,1.0
+Intel Small Business Advantage (SBA) version,"'1.0', '0.0'",N/A,0.0,1.0
+Intel Smart Response Technology version,"'1.0', '0.0'",N/A,0.0,1.0
+Processor series,"'Intel Core i3-6000 Mobile Processor Series', 'Intel Core i5-6200 series', 'Intel Celeron N3000 series', 'Intel Pentium Processor N4000 Series for Mobile', 'Intel Core i3-6100 series'",N/A,N/A,N/A
+Intel Stable Image Platform Program (SIPP) version,'0.0',N/A,0.0,0.0
+Intel TSX-NI version,"'0.0', '1.0'",N/A,0.0,1.0
+ECC supported by processor,'False',N/A,N/A,N/A
+Maximum on-board graphics adapter memory,"'32.0', '8.0', '1.74'",GB,1.74,32.0
+Conflict-Free processor,'False',N/A,N/A,N/A
+DVI port,'False',N/A,N/A,N/A
+VGA (D-Sub) ports quantity,'1.0',N/A,1.0,1.0
+Wi-Fi,'False',N/A,N/A,N/A
+Stepping,"'D1', 'H0', 'L1', 'P0', 'J1'",N/A,N/A,N/A
+Number of HDDs installed,'1.0',N/A,1.0,1.0
+Charging port type,"'Surface Connect', 'DC-in jack', 'USB Type-C'",N/A,N/A,N/A
+Manual,'False',N/A,N/A,N/A
+Power cord included,'False',N/A,N/A,N/A
+Audio system,"'Dolby Atmos', 'Dolby Audio Premium', 'Dolby Audio', 'SoundAlive'",N/A,N/A,N/A
+Processor code,"'SSSR2UW', 'SR2ZU', 'SR2EY', 'SR2ZV', 'SR2EU'",N/A,N/A,N/A
+Password protection type,"'HDD', 'BIOS', 'User'",N/A,N/A,N/A
+HDD capacity,"'500.0', '1000.0', '320.0'",GB,320.0,1000.0
+Full-size keyboard,'False',N/A,N/A,N/A
+AC adapter input voltage,'100 - 240',V,N/A,N/A
+AC adapter frequency,"'50 - 60', '50/60', '50 / 60'",Hz,N/A,N/A
+AC adapter output voltage,'15.0',V,15.0,15.0
+AC adapter output current,,N/A,nan,nan
+Intel My WiFi Technology (Intel MWT),'False',N/A,N/A,N/A
+Intel Identity Protection Technology (Intel IPT),'False',N/A,N/A,N/A
+Intel Smart Response Technology,'False',N/A,N/A,N/A
+Windows keys,'False',N/A,N/A,N/A
+USB Sleep-and-Charge,'False',N/A,N/A,N/A
+USB Sleep-and-Charge ports,'1.0',N/A,1.0,1.0
+Auto focus,,N/A,nan,nan
+4G standard,'LTE',N/A,N/A,N/A
+LightScribe,'False',N/A,N/A,N/A
+USB 3.2 Gen 2 (3.1 Gen 2) Type-C ports quantity,'1.0',N/A,1.0,1.0
+Front camera signal format,,N/A,nan,nan
+Built-in subwoofer,'False',N/A,N/A,N/A
+Contrast ratio (typical),"'1500:01:00', '1000:01:00', '500:01:00'",N/A,N/A,N/A
+Trusted Platform Module (TPM),'False',N/A,N/A,N/A
+Mobile network generation,,N/A,nan,nan
+Docking connector,'False',N/A,N/A,N/A
+Sustainability certificates,"'RoHS', 'EPEAT Gold', 'EPEAT Silver', 'ENERGY STAR'",N/A,N/A,N/A
+Fast charging,'False',N/A,N/A,N/A
+HDMI version,"'1.4b', '2', '1.4'",N/A,N/A,N/A
+SIM card support,,N/A,nan,nan
+WWAN,'False',N/A,N/A,N/A
+3D,'False',N/A,N/A,N/A
+Maximum internal memory (64-bit),"'16.0', '8.0'",GB,8.0,16.0
+Spill-resistant keyboard,'False',N/A,N/A,N/A
+Intel FDI Technology,'False',N/A,N/A,N/A
+Intel Insider,'False',N/A,N/A,N/A
+Intel Smart Cache,'False',N/A,N/A,N/A
+Microphone in,'False',N/A,N/A,N/A
+S/PDIF out port,'False',N/A,N/A,N/A
+Motherboard chipset,"'Intel SoC', 'Intel HM77 Express'",N/A,N/A,N/A
+Height (front),"'9.9', '11.8', '16.9'",mm,9.9,16.9
+Height (rear),"'14.5', '6.2', '19.1'",mm,6.2,19.1
+Mini DisplayPorts quantity,,N/A,nan,nan
+Market positioning,"'Business', 'Consumer', 'Work'",N/A,N/A,N/A
+Intel Anti-Theft Technology (Intel AT),'False',N/A,N/A,N/A
+Anti-glare screen,'False',N/A,N/A,N/A
+Operating temperature (T-T),'May-35',°C,N/A,N/A
+Front camera resolution (numeric),"'0.92', '0.3', '1.0'",MP,0.3,1.0
+Pixel density,"'201.0', '148.0'",ppi,148.0,201.0
+Storage relative humidity (H-H),'May-95',%,N/A,N/A
+Battery recharge time,'11.0',h,11.0,11.0
+Operating shock,,N/A,nan,nan
+Operating system language,"'BUL', 'ENG', 'ARA', 'DEU', 'ESP'",N/A,N/A,N/A
+Removable battery,'False',N/A,N/A,N/A
+Cables included,"'AC', 'USB Type-C'",N/A,N/A,N/A
+Operating vibration,,N/A,nan,nan
+USB Power Delivery,'False',N/A,N/A,N/A
+Privacy camera,'False',N/A,N/A,N/A
+Privacy type,'Privacy shutter',N/A,N/A,N/A
+USB 3.2 Gen 2x2 Type-C ports quantity,,N/A,nan,nan
+Battery charge indicator,'False',N/A,N/A,N/A
+Windows 11 free upgrade,'False',N/A,N/A,N/A
+Battery weight,"'185.0', '204.0', '168.0', '220.0'",g,168.0,220.0
+Battery voltage,,N/A,nan,nan
+Housing material,"'Aluminium', 'Acrylonitrile butadiene styrene (ABS)', 'Metal', 'Plastic', 'Carbon fibre'",N/A,N/A,N/A
+Operating relative humidity (H-H),'Aug-95',%,N/A,N/A
+Storage temperature (T-T),"'May-43', '-80.0'",°C,N/A,N/A
+Intel QuickPath Interconnect,,N/A,nan,nan
+Intel Virtualization Technology (Intel VT),,N/A,nan,nan
+Intel Active Management Technology (Intel AMT),'False',N/A,N/A,N/A
+Intel Matrix Storage Technology (Intel MST),'False',N/A,N/A,N/A
+Intel Demand Based Switching,'False',N/A,N/A,N/A
+Intel High Definition Audio (Intel HD Audio),'False',N/A,N/A,N/A
+Recovery operating system,,N/A,nan,nan
+Number of discrete graphics adapters installed,'1.0',N/A,1.0,1.0
+HDD size,'2.5',N/A,2.5,2.5
+CardBus PCMCIA slot type,'N',N/A,N/A,N/A
+SmartCard slot,'False',N/A,N/A,N/A
+Bluetooth Low Energy (BLE),,N/A,nan,nan
+Intel Rapid Start Technology,'False',N/A,N/A,N/A
+Intel Smart Connect Technology,'False',N/A,N/A,N/A
+HDD interface,"'SATA III', 'SATA'",N/A,N/A,N/A
+Trusted Platform Module (TPM) version,'2.0',N/A,2.0,2.0
+Display brightness,"'220.0', '200.0', '300.0', '370.0', '600.0'",cd/m²,200.0,600.0
+Colour gamut,"'120.0', '100.0', '45.0'",%,45.0,120.0
+Colour name,"'Platinum', 'Matte Black', 'Sandstone', 'Ice Blue', 'Mystic Navy'",N/A,N/A,N/A
+Certification,"'CEC', 'EPEAT', 'ErP lot3', 'ENERGY STAR 8.0\nErP Lot 3\nRoHS compliant', 'MIL-STD-810H'",N/A,N/A,N/A
+Infrared (IR) camera,'False',N/A,N/A,N/A
+High Dynamic Range (HDR) technology,,N/A,nan,nan
+RGB colour space,"'DCI-P3', 'sRGB'",N/A,N/A,N/A
+Island-style keyboard,'False',N/A,N/A,N/A
+Non-operating altitude,,N/A,nan,nan
+Audio chip,"'Realtek ALC3306', 'Synaptic CX11880'",N/A,N/A,N/A
+Pixel pitch,,N/A,nan,nan
+Quick start guide,'False',N/A,N/A,N/A
+Warranty card,'False',N/A,N/A,N/A
+HDD speed,"'5400.0', '5200.0'",N/A,5200.0,5400.0
+Drivers included,'False',N/A,N/A,N/A
+Operating altitude,"'0 - 3048', '0 - 2438'",m,N/A,N/A
+Intel Dual Display Capable Technology,'False',N/A,N/A,N/A
+Intel Fast Memory Access,'False',N/A,N/A,N/A
+FSB Parity,'False',N/A,N/A,N/A
+Intel Rapid Storage Technology,'False',N/A,N/A,N/A
+3G standards,,N/A,nan,nan
+Intel Built-in Visuals Technology,'False',N/A,N/A,N/A
+Intel HD Graphics,'False',N/A,N/A,N/A
+eSATA ports quantity,,N/A,nan,nan
+DisplayPorts quantity,,N/A,nan,nan
+Graphics adapter Open GL support,'False',N/A,N/A,N/A
+Keyboard number of keys,"'97.0', '79.0'",N/A,79.0,97.0
+Non-operating shock,,N/A,nan,nan
+Wi-Fi data rate (max),,N/A,nan,nan
+Non-operating vibration,,N/A,nan,nan
+Wi-Fi certified,'False',N/A,N/A,N/A
+USB 3.2 Gen 2 (3.1 Gen 2) Type-A ports quantity,"'1.0', '3.0'",N/A,1.0,3.0
+Power adapter barrel connector,,N/A,nan,nan
+Graphics & IMC lithography,"'14.0', '22.0', '32.0'",nm,14.0,32.0
+DVD-R Double Layer read speed,,N/A,nan,nan
+Maximum resolution,"'3840 x 2160', '1366 x 768'",pixels,N/A,N/A
+Disc types supported,,N/A,nan,nan
+Integrated 4G WiMAX,'False',N/A,N/A,N/A
+DVD+R write speed,,N/A,nan,nan
+DVD-R write speed,,N/A,nan,nan
+DVD-R Double Layer write speed,,N/A,nan,nan
+DVD+R Double Layer write speed,,N/A,nan,nan
+DVD+RW write speed,,N/A,nan,nan
+DVD-RW write speed,,N/A,nan,nan
+CD-R write speed,,N/A,nan,nan
+CD-RW write speed,,N/A,nan,nan
+DVD+R read speed,,N/A,nan,nan
+DVD-R read speed,,N/A,nan,nan
+DVD+R Double Layer read speed,,N/A,nan,nan
+DVD+RW read speed,,N/A,nan,nan
+DVD-RW read speed,,N/A,nan,nan
+CD-R read speed,,N/A,nan,nan
+CD-RW read speed,,N/A,nan,nan
+DVD-RAM read speed,,N/A,nan,nan
+DVD-RAM write speed,,N/A,nan,nan
+ExpressCard slot,'False',N/A,N/A,N/A
+Intel segment tagging,"'Home Office', 'Small Business'",N/A,N/A,N/A
+Country of origin,'China',N/A,N/A,N/A
+Screen shape,'Flat screen',N/A,N/A,N/A
+Electronic compass,,N/A,nan,nan
+Touch technology,,N/A,nan,nan
+Touchscreen type,'Capacitive',N/A,N/A,N/A
+Ambient light sensor,'False',N/A,N/A,N/A
+Micro HDMI ports quantity,,N/A,nan,nan
+CPU multiplier (bus/core ratio),"'18.0', '15.0'",N/A,15.0,18.0
+Data network,,N/A,nan,nan
+Cabling technology,,N/A,nan,nan
+4G WiMAX,,N/A,nan,nan
+Dual-screen,'False',N/A,N/A,N/A
+On/off button,'False',N/A,N/A,N/A
+Speakers manufacturer,"'OmniSonic', 'AKG'",N/A,N/A,N/A
+Mini DisplayPort/Thunderbolt combo port,'False',N/A,N/A,N/A
+Built-in speaker(s),,N/A,nan,nan
+Alienware graphics amplifier port,,N/A,nan,nan
+Number of processors supported,,N/A,nan,nan
+Number of discrete graphics adapters,,N/A,nan,nan
+Total HDDs capacity,,N/A,nan,nan
+Thunderbolt technology,'False',N/A,N/A,N/A
+On-board graphics adapter 4K support,'False',N/A,N/A,N/A
+Intel Thunderbolt 4,'False',N/A,N/A,N/A
+Thunderbolt ports quantity,,N/A,nan,nan
+Number of discrete graphics adapters supported,'1.0',N/A,1.0,1.0
+UART,'False',N/A,N/A,N/A
+Intel ME Firmware Version,,N/A,nan,nan
+Intel Smart Connect Technology version,'0.0',N/A,0.0,0.0
+Total number of SATA connectors,'2.0',N/A,2.0,2.0
+Number of SATA III connectors,'2.0',N/A,2.0,2.0
+Display response rise/fall,,N/A,nan,nan
+Pre-installed software,"'Microsoft 365', 'Link Sharing, Live Message, Live Wallpaper, McAfee Live Safe (60 Tage kostenlos), Samsung Gallerie Quick Search Samsung DeX Samsung Flow Samsung Notes Samsung Recovery Samsung Einstellungen Studio Plus Samsung Update teamPL', 'Link Sharing, Live Message, Live Wallpaper, McAfee Live Safe (60 days free), Samsung Gallery, Quick Search, Samsung DeX, Samsung Flow, Samsung Notes, Samsung Recovery, Samsung Settings, Studio Plus, Samsung Update, teamPL'",N/A,N/A,N/A
+NVIDIA G-SYNC,,N/A,nan,nan
+NVIDIA GameWorks VR,,N/A,nan,nan
+CUDA cores,,N/A,nan,nan
+Miracast,'False',N/A,N/A,N/A
+ECC,,N/A,nan,nan
+MIMO,'False',N/A,N/A,N/A
+MIMO type,,N/A,nan,nan
+HP Audio Boost,,N/A,nan,nan
+HP Smart AC Adapter,,N/A,nan,nan
+HP Imagepad,,N/A,nan,nan
+HP front camera,,N/A,nan,nan
+Fast charging time (50%),,N/A,nan,nan
+HP speaker type,,N/A,nan,nan
+HP segment,,N/A,nan,nan
+Package depth,"'56.9', '55.0', '49.0', '260.09', '49.02'",mm,49.0,499.0
+Package height,"'357.89', '395.0', '357.9', '41.91', '309.63'",mm,40.89,395.0
+Package width,"'265.94', '291.0', '265.9', '445.0', '235.46'",mm,230.0,489.96
+Discrete GPU manufacturer,"'NVIDIA', 'Intel'",N/A,N/A,N/A
+Display diagonal (metric),"'34.3', '38.1', '39.6', '33.8', '35.56'",cm,33.8,39.6
+Package weight,"'1901.0', '2600.0', '1905.0', '1791.68', '2000.0'",g,1245.0,2830.0
+Accelerometer,'False',N/A,N/A,N/A
+Scenario Design Power (SDP),"'4.0', '4.8'",W,4.0,4.8
+On-board graphics adapter burst frequency,"'650.0', '750.0'",MHz,650.0,750.0
+Flash memory,"'8.0', '64.0'",GB,8.0,64.0
+2G standards,,N/A,nan,nan
+Near Field Communication (NFC),'False',N/A,N/A,N/A
+Smart card reader,'False',N/A,N/A,N/A
+Windows Hello,'False',N/A,N/A,N/A
+MIL-STD-810G compliant,,N/A,nan,nan
+Headphone connectivity,,N/A,nan,nan
+Thunderbolt 3 ports quantity,"'2.0', '1.0'",N/A,1.0,2.0
+Continuous video playback time,,N/A,nan,nan
+HP JumpStart,,N/A,nan,nan
+HP Audio Switch,,N/A,nan,nan
+HP CoolSense,,N/A,nan,nan
+HP Orbit,,N/A,nan,nan
+Fast charging time (90%),'60.0',min,60.0,60.0
+HP Sure Connect,,N/A,nan,nan
+USB4 Gen 3x2 ports quantity,'1.0',N/A,1.0,1.0
+Images Type Map,,N/A,nan,nan
+Refurbished,'False',N/A,N/A,N/A
+Power auto-sensing,,N/A,nan,nan
+Hybrid-HDD cache type,'SSD',N/A,N/A,N/A
+Hybrid-HDD capacity,'500.0',GB,500.0,500.0
+Hybrid-HDD cache memory,,N/A,nan,nan
+Power adapter height,,N/A,nan,nan
+Power adapter depth,,N/A,nan,nan
+Power adapter width,,N/A,nan,nan
+Microphone connectivity,,N/A,nan,nan
+eSATA/USB 2.0 ports quantity,,N/A,nan,nan
+Layers per pallet,,N/A,nan,nan
+Pallet gross weight,,N/A,nan,nan
+Thunderbolt 3 Technology,,N/A,nan,nan
+Package material,,N/A,nan,nan
+Pallet gross width,,N/A,nan,nan
+Pallet gross length,,N/A,nan,nan
+Products per intermodal container (20ft),,N/A,nan,nan
+Products per intermodal container (40ft),,N/A,nan,nan
+Products per pallet layer,,N/A,nan,nan
+Pallet volume weight,,N/A,nan,nan
+Display bezel technology,,N/A,nan,nan
+Low-density polyethylene (LDPE) content per package,,N/A,nan,nan
+Corrugated cardboard content per box for accessories,,N/A,nan,nan
+Corrugated cardboard content per shipping (inner) case,,N/A,nan,nan
+Corrugated cardboard content per package,,N/A,nan,nan
+Grey board content per package,,N/A,nan,nan
+EPEAT rating,,N/A,nan,nan
+Package volume weight,,N/A,nan,nan
+Products per pallet,,N/A,nan,nan
+Face recognition,'False',N/A,N/A,N/A
+Rear camera,,N/A,nan,nan
+Display glass type,,N/A,nan,nan
+Gyroscope,'False',N/A,N/A,N/A
+Virtual Reality (VR) ready,'False',N/A,N/A,N/A
+Start-up time,,N/A,nan,nan
+Maximum shipping altitude,'3048.0',m,3048.0,3048.0
+PowerShare,,N/A,nan,nan
+Number of USB ports with PowerShare support,,N/A,nan,nan
+Intel vPro Platform Eligibility,,N/A,nan,nan
+Line-in,'False',N/A,N/A,N/A
+Intel Smart Idle Technology,'False',N/A,N/A,N/A
+Intel Secure Boot,'False',N/A,N/A,N/A
+Intel Secure Boot Technology version,'1.0',N/A,1.0,1.0
+Processor front side bus,,N/A,nan,nan
+Number of Processing Die Transistors,,N/A,nan,nan
+Processing Die size,,N/A,nan,nan
+Wireless technology,,N/A,nan,nan
+Display,,N/A,nan,nan
+Original brand name,"'Microsoft', 'Samsung'",N/A,N/A,N/A
+Model year,'2021.0',N/A,2021.0,2021.0
+NVIDIA 3D Vision,,N/A,nan,nan
+Shipping (inner) case GTIN (EAN/UPC),'UN3481',N/A,N/A,N/A
+Harmonized System (HS) code,'8471300100.0',N/A,8471300100.0,8471300100.0
+HDCP,'False',N/A,N/A,N/A
+Optional operating system supplied,,N/A,nan,nan
+sRGB coverage (typical),,N/A,nan,nan
+Temperature sensor,,N/A,nan,nan
+HP Audio Boost generation,,N/A,nan,nan
+HP Software provided,,N/A,nan,nan
+SSD memory type,,N/A,nan,nan
+Networking features,,N/A,nan,nan
+Type,,N/A,nan,nan
+Width (imperial),,N/A,nan,nan
+Power supply type,,N/A,nan,nan
+Number of products included,,N/A,nan,nan
+Depth (imperial),,N/A,nan,nan
+Infrared data port,,N/A,nan,nan
+Floppy drive installed,,N/A,nan,nan
+Ethernet interface type,,N/A,nan,nan
+Graphics adapter family,,N/A,nan,nan
+Height (front) (imperial),,N/A,nan,nan
+Height (rear) (imperial),,N/A,nan,nan
+Intel RealSense Technology,,N/A,nan,nan
+Intel RealSense Snapshot,,N/A,nan,nan
+Intel RealSense 3D Camera,,N/A,nan,nan
+On-board graphics adapter memory,,N/A,nan,nan
+Display number of colours,'262144 colours',N/A,N/A,N/A
+Internal modem,,N/A,nan,nan
+Remote control included,'False',N/A,N/A,N/A
+TV tuner integrated,,N/A,nan,nan
+TV-in port,,N/A,nan,nan
+TV-out,'False',N/A,N/A,N/A
+HDD user password,,N/A,nan,nan
+Height (imperial),,N/A,nan,nan
+Swivel webcam,,N/A,nan,nan
+Power requirements,,N/A,nan,nan
+Stylus pen,'False',N/A,N/A,N/A
+L2 cache,,N/A,nan,nan
+Docking station included,,N/A,nan,nan
+Rear camera resolution (numeric),,N/A,nan,nan
+Weight (tablet mode),,N/A,nan,nan
+Height (tablet mode),,N/A,nan,nan
+Depth (tablet mode),,N/A,nan,nan
+Width (tablet mode),,N/A,nan,nan
+Keyboard special features,,N/A,nan,nan
+Thunderbolt 4 ports quantity,"'2.0', '1.0'",N/A,1.0,2.0
+Physical Address Extension (PAE),,N/A,nan,nan
+Physical Address Extension (PAE),,N/A,nan,nan
+Audio decoders,,N/A,nan,nan
+Dell E-Value Code,'ca18l3330bto',N/A,N/A,N/A
+Mouse included,'False',N/A,N/A,N/A
+Bag included,,N/A,nan,nan
+HP OMEN Command Center,,N/A,nan,nan
+HP 3D DriveGuard,,N/A,nan,nan
+HP Support Assistant,,N/A,nan,nan
+HP ePrint,,N/A,nan,nan
+HP Recovery Manager,,N/A,nan,nan
+Firewire (IEEE 1394) ports,,N/A,nan,nan
+Optical drive interface,,N/A,nan,nan
+Flash drive interface,,N/A,nan,nan
+Non-operating thermal gradient (max),,N/A,nan,nan
+Operating thermal gradient (max),,N/A,nan,nan
+CD read speed,,N/A,nan,nan
+GPS (satellite),,N/A,nan,nan
+CD write speed,,N/A,nan,nan
+Power supply,,N/A,nan,nan
+Maximum graphics adapter memory,,N/A,nan,nan
+Graphics adapter,,N/A,nan,nan
+Compliance industry standards,,N/A,nan,nan
+NTSC coverage (typical),,N/A,nan,nan
+HP Sure View,,N/A,nan,nan
+HP Management tools,,N/A,nan,nan
+HP Connection Optimizer,,N/A,nan,nan
+Proximity sensor,,N/A,nan,nan
+Networking standards,,N/A,nan,nan
+Networking topology,,N/A,nan,nan
+External video modes refresh rate (max),,N/A,nan,nan
+External video modes non-interlaced resolution with max. refresh rate,,N/A,nan,nan
+Volume control,'Y',N/A,N/A,N/A
+"Internal video mode, resolution",,N/A,nan,nan
+HD-Ready,,N/A,nan,nan
+CD rewrite speed,,N/A,nan,nan
+S-Video port,,N/A,nan,nan
+Intel HD Boost,,N/A,nan,nan
+Intel I/O Acceleration Technology,,N/A,nan,nan
+Intel Power Management Technology,,N/A,nan,nan
+Intel QuickAssist Technology,,N/A,nan,nan
+Intel Unite,,N/A,nan,nan
+Intel Unite installed,,N/A,nan,nan
+Intel RealSense Technology with Long-Range Camera,,N/A,nan,nan
+Short-Range Intel RealSense Camera,,N/A,nan,nan
+Power management,,N/A,nan,nan
+Palm vein scanner,'False',N/A,N/A,N/A
+Interface adapters included,,N/A,nan,nan
+Memory upgrade note,'Additional memory sold separately',N/A,N/A,N/A
+Built-in Wi-Fi switch,,N/A,nan,nan
+Pallet gross height,,N/A,nan,nan
+Shipping (inner) case width,,N/A,nan,nan
+Shipping (inner) case length,,N/A,nan,nan
+Shipping (inner) case height,,N/A,nan,nan
+Shipping (inner) case gross weight,,N/A,nan,nan
+"Products per intermodal container (40ft, HC)",,N/A,nan,nan
+Shipping (inner) case volume weight,,N/A,nan,nan
+Maximum number of stacking cartons,,N/A,nan,nan
+Other materials content per package,,N/A,nan,nan
+Corrugated cardboard content per sleeve for accessories,,N/A,nan,nan
+Paper molded pulp content per package,,N/A,nan,nan
+USB Power Delivery revision,,N/A,nan,nan
+LAN/VGA combo port,'False',N/A,N/A,N/A
+Docking station USB 3.2 Gen 1 (3.1 Gen 1) ports quantity,,N/A,nan,nan
+Docking station HDMI port,,N/A,nan,nan
+Docking station DVI port,,N/A,nan,nan
+Docking station headphone out,,N/A,nan,nan
+Docking station microphone in,,N/A,nan,nan
+Docking station Ethernet LAN,,N/A,nan,nan
+Docking station VGA (D-Sub) port,,N/A,nan,nan
+Audio quality,,N/A,nan,nan
+BD-RE XL write speed,,N/A,nan,nan
+BD-R XL write speed,,N/A,nan,nan
+BD-R write speed,,N/A,nan,nan
+BD-RE write speed,,N/A,nan,nan
+BD-ROM read speed,,N/A,nan,nan
+BD-R Dual Layer write speed,,N/A,nan,nan
+BD-RE Dual Layer write speed,,N/A,nan,nan
+On-board graphics adapter 6K support,'False',N/A,N/A,N/A
+Rated lifetime,,N/A,nan,nan
+Intel Optane Memory module installed,,N/A,nan,nan
+Intel Optane Memory module capacity,,N/A,nan,nan
+Micro-USB 2.0 ports quantity,,N/A,nan,nan
+Modem (RJ-11) ports,,N/A,nan,nan
+Modem speed,,N/A,nan,nan
+Dimensions (WxDxH),,N/A,nan,nan
+4G LTE,,N/A,nan,nan
+64-bit computing,,N/A,nan,nan
+Number of speakers,,N/A,nan,nan
+Serial ports quantity,,N/A,nan,nan
+LAN controller,,N/A,nan,nan
+Memory slots (available),,N/A,nan,nan
+Wake-on-LAN ready,,N/A,nan,nan
+HP Security tools,,N/A,nan,nan
+Low halogen,,N/A,nan,nan
+Number of pins,,N/A,nan,nan
+USB charging voltage,,N/A,nan,nan
+Wake-on-Ring ready,,N/A,nan,nan
+Modem type,,N/A,nan,nan
+TV tuner type,,N/A,nan,nan
+Docking station connecting interface,,N/A,nan,nan
+Docking station DisplayPort,,N/A,nan,nan
+Intel Pro Wireless Display (Intel Pro WiDi),,N/A,nan,nan
+Intel Wireless-AC Technology,,N/A,nan,nan
+Hot-swap battery,,N/A,nan,nan
+Battery charge status button,,N/A,nan,nan
+HDD recovery,,N/A,nan,nan
+Indication light,,N/A,nan,nan
+Compatible operating systems,,N/A,nan,nan
+Assisted GPS (A-GPS),,N/A,nan,nan
+eSATA/USB 3.2 Gen 1 (3.1 Gen 1) ports quantity,,N/A,nan,nan
+Minimum storage drive space,,N/A,nan,nan
+Intel Evo Platform Verified,'False',N/A,N/A,N/A
+Tcase,,N/A,nan,nan
+CardBus PCMCIA slots quantity,,N/A,nan,nan
+TV-out type,,N/A,nan,nan
+Rugged design,,N/A,nan,nan
+BD-R read speed,,N/A,nan,nan
+BD-RE read speed,,N/A,nan,nan
+BD-R Dual Layer read speed,,N/A,nan,nan
+BD-RE Dual Layer read speed,,N/A,nan,nan
+Toshiba Reliability Guarantee,,N/A,nan,nan
+Media types supported,,N/A,nan,nan
+Colour sensor,,N/A,nan,nan
+Keyboard key pitch,,N/A,nan,nan
+Keyboard keystroke,,N/A,nan,nan
+Audio system maximum sampling rate,,N/A,nan,nan
+Audio system full duplex,,N/A,nan,nan
+Internal memory expansion module sizes,,N/A,nan,nan
+External video modes maximum refresh rate (non-interlaced),,N/A,nan,nan
+CD/DVD drive buffer size,,N/A,nan,nan
+CD/DVD weight,,N/A,nan,nan
+"Drive device, buffer size",,N/A,nan,nan
+Fixed network speed,,N/A,nan,nan
+L2 cache,,N/A,nan,nan
+Non-operating relative humidity (non-condensing),,N/A,nan,nan
+AC adapter weight,,N/A,nan,nan
+LCD brightness levels 1-8,,N/A,nan,nan
+Storage drive height,,N/A,nan,nan
+HDD number of plates,,N/A,nan,nan
+HDD number of heads,,N/A,nan,nan
+Manageability features,,N/A,nan,nan
+Drive devices applicable disk format,,N/A,nan,nan
+Display type,,N/A,nan,nan
+Graphics adapter manufacturer,,N/A,nan,nan
+Intel Active Management Technology version,,N/A,nan,nan
+Laptop hinge test,,N/A,nan,nan
+Keyboard test,,N/A,nan,nan
+Extreme temperature test,,N/A,nan,nan
+I/O ports test,,N/A,nan,nan
+Quantity,,N/A,nan,nan
+Standby time,,N/A,nan,nan
+Multi-touch,,N/A,nan,nan
+Repairability index,,N/A,nan,nan
+Number of batteries,'1.0',N/A,1.0,1.0
+UN number,"'UN3480', 'UN3481'",N/A,N/A,N/A
+High-density polyethylene (HDPE) content per package,,N/A,nan,nan
+Polypropylene (PP) content per package,,N/A,nan,nan
+Parallel ports quantity,,N/A,nan,nan
+Driver software for optical drive,,N/A,nan,nan
+DisplayPort version,,N/A,nan,nan
+HP Care Pack,,N/A,nan,nan
+HP Pen Control,,N/A,nan,nan
+Drive bays,,N/A,nan,nan
+Audio included,,N/A,nan,nan
+Keyboard type,,N/A,nan,nan
+Mini VGA ports quantity,,N/A,nan,nan
+Dell ControlVault,,N/A,nan,nan
+Number of keyboard cursor keys,,N/A,nan,nan
+Hot keys,,N/A,nan,nan
+Processor core voltage (AC),,N/A,nan,nan
+Audio formats supported,,N/A,nan,nan
+Keyboard manufacturer,,N/A,nan,nan
+Keyboard function keys,,N/A,nan,nan
+L3 cache,,N/A,nan,nan
+Battery performance,,N/A,nan,nan
+Power adapter weight,,N/A,nan,nan
+RAID support,,N/A,nan,nan
+Intel Optane Memory Ready,,N/A,nan,nan
+Maximum number of SMP processors,,N/A,nan,nan
+Bundled hardware,,N/A,nan,nan
+Wireless option type,,N/A,nan,nan
+Expansion slots,,N/A,nan,nan
+Docking solution,,N/A,nan,nan
+Security management description,,N/A,nan,nan
+Protection tools,,N/A,nan,nan
+I/O ports,,N/A,nan,nan
+HDD controller type,,N/A,nan,nan
+Maximum HDD capacity,,N/A,nan,nan
+Video card features,,N/A,nan,nan
+Power consumption (typical),,N/A,nan,nan
+Number of battery cells (tablet),,N/A,nan,nan
+"Battery capacity (tablet, Watt-hours)",,N/A,nan,nan
+Rear camera HD type,,N/A,nan,nan
+Orientation sensor,,N/A,nan,nan
+Master (outer) case gross weight,"'1901.0', '6092.0', '2000.0', '1900.0', '6260.0'",g,1900.0,6260.0
+Master (outer) case length,"'357.89', '357.9', '323.09', '323.1'",mm,323.09,357.9
+Products per master (outer) case,"'1.0', '3.0'",pc(s),1.0,3.0
+Master (outer) case height,"'56.9', '173.0', '172.97', '67.6', '202.9'",mm,56.9,202.9
+Master (outer) case width,"'265.94', '265.9', '262.89', '262.9'",mm,262.89,265.94
+BD-RE XL read speed,,N/A,nan,nan
+BD-R XL read speed,,N/A,nan,nan
+Built-in optical drive,,N/A,nan,nan
+NVIDIA 3D Vision 2,,N/A,nan,nan
+Mini HDMI ports quantity,,N/A,nan,nan
+Memory channels,"'Octa-channel', 'Dual-channel'",N/A,N/A,N/A
+Video adapter features,,N/A,nan,nan
+Built-in touchpad,,N/A,nan,nan
+Foldable display,'False',N/A,N/A,N/A
+Number of touchpad buttons,'2.0',N/A,2.0,2.0
+Audio system direct 3D sound,,N/A,nan,nan
+Networking type,,N/A,nan,nan
+Keyboard included on selected markets only,,N/A,nan,nan
+Battery recharge time (on),,N/A,nan,nan
+Battery recharge time (off),,N/A,nan,nan
+Processor system type,,N/A,nan,nan
+Supported graphics resolutions,,N/A,nan,nan
+BIOS password,,N/A,nan,nan
+High Dynamic Range (HDR) supported,,N/A,nan,nan
+External display,,N/A,nan,nan
+HP rear camera,,N/A,nan,nan
+Bamboo molded pulp content per package,,N/A,nan,nan
+User guide,,N/A,nan,nan
+WWAN module,,N/A,nan,nan
+SIM card type,,N/A,nan,nan
+DVD drive compatibility,,N/A,nan,nan
+Doesn't contain,,N/A,nan,nan
+HP Documentation,,N/A,nan,nan
+Wide-angle lens front camera,,N/A,nan,nan
+Memory bus,,N/A,nan,nan
+Battery type,,N/A,nan,nan
+Number of Thunderbolt 3 ports with PowerShare support,,N/A,nan,nan
+Size (imperial),,N/A,nan,nan
+Network connection type,,N/A,nan,nan
+Touch Bar,'False',N/A,N/A,N/A
+Built-in stylus pen storage,'False',N/A,N/A,N/A
+NVIDIA Optimus technology,,N/A,nan,nan
+NFC key,,N/A,nan,nan
+Body SAR (EU),'0.33',W/kg,0.33,0.33
+Battery life (tablet mode),,N/A,nan,nan
+Keyboard included,,N/A,nan,nan
+Second display panel type,,N/A,nan,nan
+Second display diagonal,,N/A,nan,nan
+Second display resolution,,N/A,nan,nan
+Display technology,,N/A,nan,nan
+USB 2.0 Type-C ports quantity,,N/A,nan,nan
+Plug and Play,,N/A,nan,nan
+Dolby technologies,,N/A,nan,nan
+Second display touch technology,,N/A,nan,nan
+Battery life with optional 2nd battery,,N/A,nan,nan
+Number of hot keys,,N/A,nan,nan
+GSM module,,N/A,nan,nan
+Master (outer) cases per pallet,,N/A,nan,nan
+Master (outer) cases per pallet layer,,N/A,nan,nan
+Audio system manufacturer,,N/A,nan,nan
+Wired communication manufacturer,,N/A,nan,nan
+Wired communication type,,N/A,nan,nan
+Wired communication features,,N/A,nan,nan
+Wired communication connector,,N/A,nan,nan
+Wired communication chipset,,N/A,nan,nan
+Wireless compliance,,N/A,nan,nan
+Wireless communication manufacturer,,N/A,nan,nan
+DVD drive type,,N/A,nan,nan
+DVD interface type,,N/A,nan,nan
+External video adapter resolution,,N/A,nan,nan
+Non-operating shock with/without CD-ROM drive installed,,N/A,nan,nan
+Non-operating vibration with/without CD-ROM drive installed,,N/A,nan,nan
+Operating shock with/without CD-ROM drive installed,,N/A,nan,nan
+Operating vibration with/without CD-ROM drive installed,,N/A,nan,nan
+Volume dial,,N/A,nan,nan
+Casework material,,N/A,nan,nan
+Security features,,N/A,nan,nan
+Motherboard manufacturer,,N/A,nan,nan
+Wireless communication data transfer rate,,N/A,nan,nan
+Special features,,N/A,nan,nan
+Expansion type,,N/A,nan,nan
+2D graphics accelerator,,N/A,nan,nan
+Storage drive desktop or notebook?,,N/A,nan,nan
+Keyboard euro key,,N/A,nan,nan
+Package weight,,N/A,nan,nan
+Intel Advanced Vector Extensions,,N/A,nan,nan
+Intel Smart Sound Technology,,N/A,nan,nan
+Stylus pen type,,N/A,nan,nan
+Compatible processor series,,N/A,nan,nan
+Micro-USB 3.2 Gen 1 (3.1 Gen 1) ports quantity,,N/A,nan,nan
+Port replicator,,N/A,nan,nan
+Scalability,,N/A,nan,nan
+Thermal solution specification,,N/A,nan,nan
+Keyboard easy keys,,N/A,nan,nan
+BIOS ACPI,,N/A,nan,nan
+Second display location,,N/A,nan,nan
+Docking station graphics adapter model,,N/A,nan,nan
+Docking station graphics adapter memory,,N/A,nan,nan
+Docking station graphics adapter memory type,,N/A,nan,nan
+Docking station power supply,,N/A,nan,nan
+Docking station LAN controller,,N/A,nan,nan
+Docking station supported HDD size,,N/A,nan,nan
+Docking station built-in speakers,,N/A,nan,nan
+Docking station audio output channels,,N/A,nan,nan
+Docking station speakers RMS power,,N/A,nan,nan
+Docking station subwoofer RMS power,,N/A,nan,nan
+Docking station mini DisplayPort,,N/A,nan,nan
+Docking station power connector,,N/A,nan,nan
+Labelflash,,N/A,nan,nan
+Ergonomics,,N/A,nan,nan
+Relative humidity,,N/A,nan,nan
+Processor technology,,N/A,nan,nan
+UNSPSC-code,,N/A,nan,nan
+Package dimensions (WxDxH),,N/A,nan,nan
+Motherboard southbridge,,N/A,nan,nan
+True Key,,N/A,nan,nan
+Coprocessor model,,N/A,nan,nan
+Audio adapter type,,N/A,nan,nan
+Main camera resolution (numeric),,N/A,nan,nan
+Intel Memory Protection Extensions (Intel MPX),,N/A,nan,nan
+Intel Instruction Replay Technology,,N/A,nan,nan
+Cache memory,,N/A,nan,nan
+Maximum internal memory,,N/A,nan,nan
+Thunderbolt 2 ports quantity,,N/A,nan,nan
+Maximum graphics adapter memory,,N/A,nan,nan
+Self-Encrypting Drive (SED),,N/A,nan,nan
+Speakers,,N/A,nan,nan
+AMD FreeSync,,N/A,nan,nan
+Noise-canceling,,N/A,nan,nan
+ROG XG Mobile port,,N/A,nan,nan
+Docking station Dual Link DVI,,N/A,nan,nan
+Commodity Classification Automated Tracking System (CCATS),"'8471300100.0', '8471300000.0'",N/A,8471300000.0,8471300100.0
+Operating temperature (T-T),,N/A,nan,nan
+Multimedia,,N/A,nan,nan
+Wireless standard,,N/A,nan,nan
+Antenna,,N/A,nan,nan
+Memory description,,N/A,nan,nan
+Energy saving functions,,N/A,nan,nan
+Multimedia features,,N/A,nan,nan
+Worldwide AC compatibility,,N/A,nan,nan
+Wireless features,,N/A,nan,nan
+Weight (imperial),,N/A,nan,nan
+Intermodal container (20ft) loading note,,N/A,nan,nan
+HP Touchpoint Manager,,N/A,nan,nan
+"Master (outer) cases per intermodal container (40ft, HC)",,N/A,nan,nan
+Master (outer) cases per intermodal container (20ft),,N/A,nan,nan
+Headset included,,N/A,nan,nan
+Storage drive type,,N/A,nan,nan
+DVD read speed,,N/A,nan,nan
+Thunderbolt version,,N/A,nan,nan
+DVD-ROM read speed,,N/A,nan,nan
+Hot-swap second graphics adapter,,N/A,nan,nan
+Cache internal,,N/A,nan,nan
+DVD write speed,,N/A,nan,nan
+DVD rewrite speed,,N/A,nan,nan
+Convertible hinge test,,N/A,nan,nan
+Polyethylene terephthalate (PET) content per package,,N/A,nan,nan
+HP Sure Connect 2.0,,N/A,nan,nan
+USB charging current,,N/A,nan,nan
+DVD+R speed,,N/A,nan,nan
+DVD+RW speed,,N/A,nan,nan
+DVD-R speed,,N/A,nan,nan
+DVD-RW speed,,N/A,nan,nan
+4K streaming,,N/A,nan,nan
+On-board graphics adapter cores,,N/A,nan,nan
+HP Drive Encryption,,N/A,nan,nan
+Hot-swap,,N/A,nan,nan
+Model availability,,N/A,nan,nan
+Palmrest keyboards supported,,N/A,nan,nan
+Browsing time (Wi-Fi),,N/A,nan,nan
+HP stylus pen type,,N/A,nan,nan
+Graphics adapter interface,,N/A,nan,nan
+Downloadable software,,N/A,nan,nan
+Double Layer DVD write speed,,N/A,nan,nan
+Double Layer DVD read speed,,N/A,nan,nan
+Memory upgrade,,N/A,nan,nan
+Memory card slot(s),,N/A,nan,nan
+Bluetooth profiles,,N/A,nan,nan
+External video modes resolution (max),,N/A,nan,nan
+Networking speed,,N/A,nan,nan
+"Video adapter, bus",,N/A,nan,nan
+Simultaneous external display,,N/A,nan,nan
+Data transfer rate,,N/A,nan,nan
+Type of bays,,N/A,nan,nan
+RJ-45 ports quantity,,N/A,nan,nan
+HDMI,,N/A,nan,nan
+Number of WLAN antennas,,N/A,nan,nan
+Number of pointing stick buttons,,N/A,nan,nan
+HDD 2 capacity,,N/A,nan,nan
+CD-ROM read speed,,N/A,nan,nan
+Machined aluminium design,,N/A,nan,nan
+Number of Graphics & IMC Die Transistors,,N/A,nan,nan
+Number of QPI links,,N/A,nan,nan
+Battery capacity (tablet),,N/A,nan,nan
+HD DVD-ROM read speed,,N/A,nan,nan
+HD DVD-ROM write speed,,N/A,nan,nan
+Charging time,,N/A,nan,nan
+Hall sensor,,N/A,nan,nan
+Display size (HxV) (imperial),,N/A,nan,nan
+Storage drive controller,,N/A,nan,nan
+ATI XGP ports quantity,,N/A,nan,nan
+Included power plug types,,N/A,nan,nan
+Mouse included on selected markets only,,N/A,nan,nan
+Sustainability compliance,,N/A,nan,nan
+Compatible products,,N/A,nan,nan
+"SSD, height",,N/A,nan,nan
+Diskette drive memory,,N/A,nan,nan
+Maximum operating altitude,,N/A,nan,nan
+Maximum storage altitude,,N/A,nan,nan
+Pallets per intermodal container (20ft),,N/A,nan,nan
+Keyboard,,N/A,nan,nan
+Second display refresh rate,,N/A,nan,nan
+Accessibility features,,N/A,nan,nan
+Composite video in,,N/A,nan,nan
+Master (outer) cases per intermodal container (40ft),,N/A,nan,nan
+Video RAM,,N/A,nan,nan
+PS/2 ports quantity,,N/A,nan,nan
+Multi-bay devices,,N/A,nan,nan
+Box contents,,N/A,nan,nan
+Motherboard ARK ID,,N/A,nan,nan
+Cache external,,N/A,nan,nan
+HP Cool Control,,N/A,nan,nan
+BIOS memory,,N/A,nan,nan
+Video compression formats,,N/A,nan,nan
+E-mail,,N/A,nan,nan
+"Integrated wireless LAN, type of network I/F chip",,N/A,nan,nan
+Built-in memory capacity,,N/A,nan,nan
+HP Mobile Connect,,N/A,nan,nan
+Resolution,,N/A,nan,nan
+Intel Virtualization Technology for Connectivity (VT-c),,N/A,nan,nan
+eSATA,,N/A,nan,nan
+Display resolution (numeric),,N/A,nan,nan
+Controller type,,N/A,nan,nan
+Instant messaging (IM),,N/A,nan,nan
+Minimum RAM,,N/A,nan,nan
+Upgrade type,,N/A,nan,nan
+Diskette drive,,N/A,nan,nan
+Pouch,,N/A,nan,nan
+Quantity outer carton,,N/A,nan,nan
+Supported protocols,,N/A,nan,nan
+Supported HDD interfaces,,N/A,nan,nan
+USB 1.1 ports quantity,,N/A,nan,nan
+Rear camera resolution,,N/A,nan,nan
+Operating system version,,N/A,nan,nan
+Supported audio standards,,N/A,nan,nan
+Audio system direct sound,,N/A,nan,nan
+BIOS manufacturer,,N/A,nan,nan
+System management BIOS,,N/A,nan,nan
+BIOS DPMS support,,N/A,nan,nan
+BIOS VESA support,,N/A,nan,nan
+BIOS DDC support,,N/A,nan,nan
+BIOS Plug and Play support,,N/A,nan,nan
+Motherboard architecture,,N/A,nan,nan
+Voice control,,N/A,nan,nan
+BIOS type,,N/A,nan,nan
+Maximum memory card size,,N/A,nan,nan
+Pallet gross volume,,N/A,nan,nan
+Webcamera description,,N/A,nan,nan
+Configuration management description,,N/A,nan,nan
+Rear ports note,,N/A,nan,nan
+Keyboard illumination,,N/A,nan,nan
+Backlight type,,N/A,nan,nan
+Rear ports,,N/A,nan,nan
+Standard memory capacity,,N/A,nan,nan
+Service provider,,N/A,nan,nan
+Certified operating system,,N/A,nan,nan
+Data transfer rate,,N/A,nan,nan
+Display resolution (unfolded),,N/A,nan,nan
+Package tare weight,,N/A,nan,nan
+Video in,,N/A,nan,nan
+Video card note,,N/A,nan,nan
+Drop proof,,N/A,nan,nan
+Export Control Classification Number (ECCN),,N/A,nan,nan
+"Master (outer) cases per intermodal container (45ft, HC)",,N/A,nan,nan
+HP Display Control,,N/A,nan,nan
+Modem chip,,N/A,nan,nan
+Networking manufacturer,,N/A,nan,nan
+Intel Turbo Memory,,N/A,nan,nan
+Tobii Eye Tracking technology,,N/A,nan,nan
+Bluetooth range,,N/A,nan,nan
+Software productivity,,N/A,nan,nan
+Storage drive partition,,N/A,nan,nan
+Storage drive protection,,N/A,nan,nan
+Chassis type,,N/A,nan,nan
+Technical features,,N/A,nan,nan
+BIOS flash ROM,,N/A,nan,nan
+Adobe RGB coverage,,N/A,nan,nan
+Frame rate,,N/A,nan,nan
+Ethernet extension Gen 2 port,,N/A,nan,nan
+Embedded DRAM (eDRAM) memory,,N/A,nan,nan
+True Tone technology,,N/A,nan,nan
+Pallet net width,,N/A,nan,nan
+Service included,,N/A,nan,nan
+PCI Bus,,N/A,nan,nan
+Wireless transmission,,N/A,nan,nan
+Memory module type,,N/A,nan,nan
+Interface type,,N/A,nan,nan
+Camera resolution,,N/A,nan,nan
+Battery life power on,,N/A,nan,nan
+Battery life power off,,N/A,nan,nan
+VID Voltage Range,,N/A,nan,nan
+PC Pro A-List,,N/A,nan,nan
+Keyboard weight,,N/A,nan,nan
+BIOS advanced power management,,N/A,nan,nan
+Toshiba EasyMedia,,N/A,nan,nan
+Power consumption (standby),,N/A,nan,nan
+Tuned Stereo Speakers,,N/A,nan,nan
+HP Jumpstart Concierge,,N/A,nan,nan
+Second display glass type,,N/A,nan,nan
+Operating altitude relative to sea level,,N/A,nan,nan
+Products per shipping (inner) case,,N/A,nan,nan
+HP SecurePad,,N/A,nan,nan
+Processor upgrade,,N/A,nan,nan
+Chipset,,N/A,nan,nan
+Graphics adapter memory type,,N/A,nan,nan
+Battery life,,N/A,nan,nan
+Battery life,,N/A,nan,nan
+Internal memory,,N/A,nan,nan
+Number of slots,,N/A,nan,nan
+Toshiba EasyGuard,,N/A,nan,nan
+Coprocessor cores,,N/A,nan,nan
+RJ-11 ports quantity,,N/A,nan,nan
+Eyesafe technology,,N/A,nan,nan
+Night mode,,N/A,nan,nan
+DCI-P3 coverage,,N/A,nan,nan
+WCDMA bands supported,,N/A,nan,nan
+HP Enhance+,,N/A,nan,nan
+HP My Display,,N/A,nan,nan
+Security chip,,N/A,nan,nan
+Video modes resolution,,N/A,nan,nan
+Intel Instruction Replay Technology version,,N/A,nan,nan
+Intel Smart Idle Technology version,,N/A,nan,nan
+Seek time,,N/A,nan,nan
+Applications supported,,N/A,nan,nan
+NVIDIA 3D LightBoost,,N/A,nan,nan
+Shipping (inner) case volume,,N/A,nan,nan
+Operating system note,,N/A,nan,nan
+Layers per pallet (US),'20.0',pc(s),20.0,20.0
+Audio system ports,,N/A,nan,nan
+Wireless communication version,,N/A,nan,nan
+BIOS memory size,,N/A,nan,nan
+Communication manufacturer,,N/A,nan,nan
+Communication ports,,N/A,nan,nan
+DVD transfer rate (sustained mode),,N/A,nan,nan
+DVD-ROM drive burst transfer rate (PIO mode 4),,N/A,nan,nan
+DVD-ROM DMA single mode transfer rate (DMA mode 2),,N/A,nan,nan
+DVD DMA multi-mode (DMA mode 1),,N/A,nan,nan
+DVD-ROM drive average random seek time (CD-ROM mode),,N/A,nan,nan
+DVD drive average random seek time,,N/A,nan,nan
+DVD drive average random access time,,N/A,nan,nan
+DVD-ROM drive transport,,N/A,nan,nan
+Networking connector,,N/A,nan,nan
+Non-operating altitude relative to sea level,,N/A,nan,nan
+CD-ROM interface type,,N/A,nan,nan
+Storage capacity,,N/A,nan,nan
+"Drive device, transfer rate",,N/A,nan,nan
+Track to track seek time,,N/A,nan,nan
+Drive device maximum speed,,N/A,nan,nan
+Option type,,N/A,nan,nan
+Motherboard USB,,N/A,nan,nan
+Resume battery backup after,,N/A,nan,nan
+Comments,,N/A,nan,nan
+Supplied battery type,,N/A,nan,nan
+I/O ports type,,N/A,nan,nan
+Number of drive bays,,N/A,nan,nan
+Instant On,,N/A,nan,nan
+Network integrated ports,,N/A,nan,nan
+Ethernet specifications,,N/A,nan,nan
+Wireless range,,N/A,nan,nan
+Average latency,,N/A,nan,nan
+Effective megapixels,,N/A,nan,nan
+Speakers and microphone,,N/A,nan,nan
+"Batteries included (type, quantity)",,N/A,nan,nan
+Connector material,,N/A,nan,nan
+Package net weight,,N/A,nan,nan
+Motion Picture function,,N/A,nan,nan
+Control panel,,N/A,nan,nan
+Alarms,,N/A,nan,nan
+Interface,,N/A,nan,nan
+Maximum memory,,N/A,nan,nan
+Access time,,N/A,nan,nan
+Pallet GTIN (EAN/UPC),,N/A,nan,nan
+"Products per intermodal container (45ft, HC)",,N/A,nan,nan
+Composite video out,,N/A,nan,nan
+Adapter type,,N/A,nan,nan
+Built-in wireless charger,,N/A,nan,nan
+Picture enhancement,,N/A,nan,nan
+AV output,,N/A,nan,nan
+Front / Side connections,,N/A,nan,nan
+Storage drive average seek time,,N/A,nan,nan
+Package type,,N/A,nan,nan
+Optional accessories,,N/A,nan,nan
+DVD,,N/A,nan,nan
+Supported network protocols,,N/A,nan,nan
+Memory access time,,N/A,nan,nan
+HDD note,,N/A,nan,nan
+Supported data transfer rates,,N/A,nan,nan
+Power supply note,,N/A,nan,nan
+Storage options,,N/A,nan,nan
+Video card resolution,,N/A,nan,nan
+Browser supported,,N/A,nan,nan
+Communication,,N/A,nan,nan
+Weight (including battery),,N/A,nan,nan
+HDMI in,,N/A,nan,nan
+Effective megapixels (image),,N/A,nan,nan
+Surface treatment,,N/A,nan,nan
+Slot type,,N/A,nan,nan
+Resume battery backup after,,N/A,nan,nan
+CD/DVD drive manufacturer,,N/A,nan,nan
+CD/DVD maximum speed,,N/A,nan,nan
+CD-RW/DVD-ROM transfer rate,,N/A,nan,nan
+Device read/write media compatibility,,N/A,nan,nan
+Drive device weight,,N/A,nan,nan
+CD-RW/DVD-ROM interface,,N/A,nan,nan
+CD/DVD drive DMA burst data transfer rate,,N/A,nan,nan
+CD/DVD drive ultra DMA burst data transfer rate,,N/A,nan,nan
+CD/DVD drive multiword DMA burst data transfer rate,,N/A,nan,nan
+CD/DVD drive rotational speed,,N/A,nan,nan
+Optical drive removable,,N/A,nan,nan
+Optical drive player software,,N/A,nan,nan
+CD/DVD writing software,,N/A,nan,nan
+Number of expansion types,,N/A,nan,nan
+Motion compensation,,N/A,nan,nan
+Graphics adapter RAMDAC,,N/A,nan,nan
+Graphics adapter output connector,,N/A,nan,nan
+Number of interfaces,,N/A,nan,nan
+I/O adaptor interfaces,,N/A,nan,nan
+Cover material,,N/A,nan,nan
+Audio drivers,,N/A,nan,nan
+Measurable quality,,N/A,nan,nan
+USB Power Delivery up to,,N/A,nan,nan
+Second display LED backlight,,N/A,nan,nan
+GSM bands supported,,N/A,nan,nan
+Stand included,,N/A,nan,nan
+Wrist rest,,N/A,nan,nan
+Graphics adapter multiple display support,,N/A,nan,nan
+4G bands supported,,N/A,nan,nan
+3G bands supported,,N/A,nan,nan
+Charging time,,N/A,nan,nan
+Optional operating system installed,,N/A,nan,nan
+Dimensions (W x D x H) (imperial),,N/A,nan,nan
+NetDock port replicator,,N/A,nan,nan
+Expansion station,,N/A,nan,nan
+CardDock,,N/A,nan,nan
+CD drive maximum speed,,N/A,nan,nan
+CD-ROM drive media supported,,N/A,nan,nan
+CD transfer rate (sustained mode),,N/A,nan,nan
+CD-ROM drive burst transfer rate (PIO mode 4),,N/A,nan,nan
+CD-ROM DMA single mode transfer rate (DMA mode 2),,N/A,nan,nan
+CD-ROM DMA multi-mode (DMA mode 1),,N/A,nan,nan
+CD-ROM drive average random seek time (CD-ROM mode),,N/A,nan,nan
+CD-ROM drive average random access time,,N/A,nan,nan
+Optical drive average full stroke access,,N/A,nan,nan
+CD-ROM drive transport,,N/A,nan,nan
+Wireless network support,,N/A,nan,nan
+External video modes graphics accelerator,,N/A,nan,nan
+Cable type,,N/A,nan,nan
+Additional accessories,,N/A,nan,nan
+DVD-ROM transfer rate (sustained mode),,N/A,nan,nan
+Battery life disclaimer,,N/A,nan,nan
+Motherboard microprocessor,,N/A,nan,nan
+Special buttons,,N/A,nan,nan
+SonicStage,,N/A,nan,nan
+Bluetooth data transfer rate (max),,N/A,nan,nan
+Resume battery backup after,,N/A,nan,nan
+Sheet battery life (optional),,N/A,nan,nan
+Sheet battery life disclaimer (optional),,N/A,nan,nan
+SD interface,,N/A,nan,nan
+Memory Stick (MS) interface,,N/A,nan,nan
+DVgate,,N/A,nan,nan
+QuickTime,,N/A,nan,nan
+Rear camera effective resolution,,N/A,nan,nan
+3D Active Shutter Glasses,,N/A,nan,nan
+WiMAX,,N/A,nan,nan
+Processor core voltage (Battery mode),,N/A,nan,nan
+Pointing stick,,N/A,nan,nan
+"Read speed, optical drive",,N/A,nan,nan
+WinDVD,,N/A,nan,nan
+Resolution name,,N/A,nan,nan
+WWAN Download/Upload speeds,,N/A,nan,nan
+Connector(s),,N/A,nan,nan
+Diskette drive rotational speed,,N/A,nan,nan
+Optical drive speed,,N/A,nan,nan
+Supplied AC adapter type,,N/A,nan,nan
+Memory upgrade disclaimer,,N/A,nan,nan
+ClearAudio+ mode,,N/A,nan,nan
+VAIO international repair service,,N/A,nan,nan
+Storage,,N/A,nan,nan
+Bandwidth,,N/A,nan,nan
+Digitizer stylus,,N/A,nan,nan
+Software - education / reference,,N/A,nan,nan
+Optical drive write speed,,N/A,nan,nan
+Audio output,,N/A,nan,nan
+Motion Eye,,N/A,nan,nan
+DVD drive transfer rate,,N/A,nan,nan
+Docking station graphics adapter manufacturer,,N/A,nan,nan
+Motion Picture maximum resolution,,N/A,nan,nan
+SelectBay adaptor,,N/A,nan,nan
+System memory technology,,N/A,nan,nan
+Video modes display type,,N/A,nan,nan
+Video modes maximum number of colours,,N/A,nan,nan
+Video modes maximum refresh rate (non-interlaced),,N/A,nan,nan
+Auto resolution,,N/A,nan,nan
+SonicStage Mastering Studio,,N/A,nan,nan
+Click to DVD,,N/A,nan,nan
+Vaio Zone,,N/A,nan,nan
+TV tuner formats,,N/A,nan,nan
+QosmioEngine,,N/A,nan,nan
+Continuous audio playback time,,N/A,nan,nan
+Media Center remote control function,,N/A,nan,nan
+Master (outer) case net weight,,N/A,nan,nan
+Notebook display diagonal (cm/inch),,N/A,nan,nan
+Ethernet adapter ARK ID,,N/A,nan,nan
+Pallets per intermodal container (40ft),,N/A,nan,nan
+"Pallets per intermodal container (40ft, HC)",,N/A,nan,nan
+Bytes per sector,,N/A,nan,nan
+Sectors per track,,N/A,nan,nan
+HP SmartFriend,,N/A,nan,nan
+HP SmartFriend 2.0,,N/A,nan,nan
+HP Expansion options,,N/A,nan,nan
+Number of colours,,N/A,nan,nan
+Polystyrene (PS) content per package,,N/A,nan,nan
+Wheat straw molded pulp content per package,,N/A,nan,nan
+Resolution description,,N/A,nan,nan
+Gross weight of outer carton,,N/A,nan,nan
+Height (cm) outer carton,,N/A,nan,nan
+Length (cm) outer carton,,N/A,nan,nan
+Net weight of outer carton,,N/A,nan,nan
+Tare weight outer carton,,N/A,nan,nan
+Width (cm) outer carton,,N/A,nan,nan
+Packaging net weight,,N/A,nan,nan
+Packaging tare weight,,N/A,nan,nan
+EAN/UPC/GTIN (packaging),,N/A,nan,nan
+Batteries included,,N/A,nan,nan
+Flash memory,,N/A,nan,nan
+Type of shelf-placement,,N/A,nan,nan
+BitBlt,,N/A,nan,nan
+Dimension note (imperial),,N/A,nan,nan
+Dimension note (metric),,N/A,nan,nan
+Standard memory note,,N/A,nan,nan
+Stereo sound,,N/A,nan,nan
+Browsing time,,N/A,nan,nan
+Accessories included,,N/A,nan,nan
+Maximum number of colours (max video RAM),,N/A,nan,nan
+Total (available) slots & bays,,N/A,nan,nan
+Built-in processor,,N/A,nan,nan
+Camera type,,N/A,nan,nan
+Mini-USB 2.0 ports quantity,,N/A,nan,nan
+Amplifier,,N/A,nan,nan
+Minimum system requirements,,N/A,nan,nan
+Internal video modes maximum number of colours,,N/A,nan,nan
+Graphic adapter direct 3D support,,N/A,nan,nan
+Release date (DD/MM/YYYY),,N/A,nan,nan
+Video adapter resolution,,N/A,nan,nan
+Energy efficiency class,,N/A,nan,nan
+Memory bandwidth (max),,N/A,nan,nan

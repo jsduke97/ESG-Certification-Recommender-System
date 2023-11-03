@@ -1,0 +1,2 @@
+file_folder,file_name,file_description,upload_time
+Notebooks,./Datasets/Notebooks/Notebooks_dataset.csv,"This file contains product information on notebooks, also known as laptops or personal computers. Each row in the file represents a different notebook product, and the columns are attributes for that notebook. ",56:53.7
