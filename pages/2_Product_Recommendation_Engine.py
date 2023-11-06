@@ -17,6 +17,10 @@ st.sidebar.markdown('Product Certification Evaluator')
 
 st.cache_data.clear()
 
+result = os.popen('pip list').read()
+st.code(result, language=None)
+
+
 if 'page' not in st.session_state:
     st.session_state.page = None
 if 'state' not in st.session_state:
