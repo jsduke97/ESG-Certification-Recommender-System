@@ -132,7 +132,7 @@ if st.session_state.page == "Generate New":
             progress_text = "Querying {} for {} recommendation...{} out of {} complete."
             cert_progress = st.progress(0, text=progress_text.format(LLM, cert, 0, mandates_cert.shape[0]))
             start_time = time.time()
-            for mandate in range(1):#mandates_cert.shape[0]):
+            for mandate in range(mandates_cert.shape[0]):
 
                 mandate_df = mandates_cert.iloc[[mandate]]
                 mandate_column_df = mandate_column_full_df[mandate_column_full_df["Certification"] == cert]
