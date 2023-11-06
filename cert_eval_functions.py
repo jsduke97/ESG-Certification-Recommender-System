@@ -189,7 +189,7 @@ def query_LLM(mandate_df: pd.DataFrame, mandate_column_df: pd.DataFrame, product
         openai.api_key = LLM_token
 
         try: 
-            output = openai.ChatCompletion.create(
+            output = openai.chat.completions.create(
                 model="gpt-3.5-turbo",
                 messages=[
                     {"role": "user", "content": prompt}
