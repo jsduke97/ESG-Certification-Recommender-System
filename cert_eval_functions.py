@@ -24,6 +24,23 @@ def num_tokens_from_string(string: str, encoding_name: str) -> int:
     num_tokens = len(encoding.encode(string))
     return num_tokens
 
+def get_product_list(sheet, certification: str, tester: str):
+    df = pd.DataFrame(sheet.get_worksheet(2).get_all_values(), 
+            columns = ["id", "name", "certified", "dataset", "tester"])
+    df = df[df["tester"] == tester][df["dataset"] == certification]
+    
+
+    df2 = pd.DataFrame(sheet.get_worksheet(0).get_all_values(), 
+            columns = ["id", "product", "model", "cert", "mandates passed", "mandates failed", 
+                        "mandates na", "percentage_passed", "time", "cost"])
+    df2 = df2[df2['cert'] == certification]
+    
+
+    df = df[~df["id"].isin(df2["id"])]
+    
+    return df["id"]
+
+
 def log_response(current_log: pd.DataFrame, product_df: pd.DataFrame, mandate_df: pd.DataFrame, llm_prompt: str, llm_response_full: str, llm_response: str, LLM: str):
     # id | name | category_id | category_label | Sustainability certificates.42513 | 
     # Certification | Mandate Number | Mandate title | Mandate Description |
@@ -33,7 +50,7 @@ def log_response(current_log: pd.DataFrame, product_df: pd.DataFrame, mandate_df
     name = product_df["name"].item()
     category_id = product_df["category_id"].item()
     category_label = product_df["category_label"].item()
-    certs = product_df["Sustainability certificates.42513"].item()
+    certs = ""
 
     cert = mandate_df["Certification"].item()
     mandate_no = mandate_df["Mandate Number"].item()
@@ -46,27 +63,18 @@ def log_response(current_log: pd.DataFrame, product_df: pd.DataFrame, mandate_df
 def find_last_filled_row(worksheet):
     return len(worksheet.get_all_values()) + 1
 
-def save_recommendation(file_path: str, new_recommendation: pd.DataFrame, sheet: str):
+def save_recommendation(sheet, new_recommendation: pd.DataFrame, page: str):
     # id | name | category_id | category_label | Sustainability certificates.42513 | 
     # Certification | Mandate Number | Mandate title | Mandate Description |
     # prompt | response | recommendation | model
 
     # Create a connection object.
-    credentials = service_account.Credentials.from_service_account_info(
-        st.secrets["gcp_service_account"],
-        scopes=[
-            "https://www.googleapis.com/auth/spreadsheets",
-        ],
-    )
-    gc = gspread.authorize(credentials)
 
-    if sheet == "summary":
-        sheet_url = st.secrets["spreadsheet2"]
-    elif sheet == "full":
-        sheet_url = st.secrets["spreadsheet1"]
-    sheet = gc.open_by_url(sheet_url)
+    if page == "summary":
+        worksheet = sheet.get_worksheet(0)
+    elif page == "full":
+        worksheet = sheet.get_worksheet(1)
 
-    worksheet = sheet.get_worksheet(0)  # Replace 0 with the index of your desired worksheet
     values = new_recommendation.values.tolist()
 
     # Find the last filled row
@@ -99,19 +107,21 @@ def prepare_mandate_query(mandate_df: pd.DataFrame, product: pd.DataFrame):
     product_attributes = 0
     product_attribute_string = "\n"
     i = mandate_df.index[0]
+    col_i = product.index[0]
+
     while product_attributes < 5 and i < mandate_df.index[-1]:
         col = mandate_df["Column Name Raw"][i]
-        if not pd.isna(product[col][0]):
-            col_unit = product[col + ".unit"][0]
+        if not pd.isna(product[col][col_i]):
+            col_unit = product[col + ".unit"][col_i]
             if pd.isna(col_unit):
                 col_unit = ""
             else:
                 col_unit = " " + str(col_unit)
-            product_attribute_string += str(mandate_df["Column Name"][i]) + ": " + str(product[col][0]) + str(col_unit) + "\n"
+            product_attribute_string += str(mandate_df["Column Name"][i]) + ": " + str(product[col][col_i]) + str(col_unit) + "\n"
             product_attributes += 1
         i += 1
 
-    final_query = "\nIs the product \"{}\" compliant with the {} Certification Mandate {}: {}?".format(product.iloc[0]["name"], 
+    final_query = "\nIs the product \"{}\" compliant with the {} Certification Mandate {}: {}?".format(product["name"][col_i], 
                                                                                                             mandate_df.iloc[0]["Certification"], 
                                                                                                             mandate_df.iloc[0]["Mandate Number"], 
                                                                                                             mandate_df.iloc[0]["Mandate title"])
@@ -156,6 +166,8 @@ def query_LLM(mandate_df: pd.DataFrame, mandate_column_df: pd.DataFrame, product
             return prompt, output
         except Exception as e:
             if "You are using a Trial key" in str(e):
+                if "month" in str(e):
+                    return prompt,"Error in Cohere response: {}".format(e)
                 return prompt, "LIMIT RATE"
             else:
                 return prompt, "Error in Cohere response: {}".format(e)
