@@ -115,7 +115,7 @@ if st.session_state.product != []:
 if st.session_state.page == "Generate New":
 
     try: 
-        st.markdown("<h5 style= 'text-align: center;'>Product Name: " + product_df["name"][0] + "</h5>", unsafe_allow_html= True)
+        st.markdown("<h5 style= 'text-align: center;'>Product Name: " + product_df["name"].item() + "</h5>", unsafe_allow_html= True)
     except:
         st.markdown("")
 
@@ -179,7 +179,7 @@ if st.session_state.page == "Generate New":
             with cert_cols[cert_cols_i]:
                 output = st.session_state.rec[st.session_state.rec["Certification"] == cert][st.session_state.rec["model"] == LLM]
                 passed, failed, na, rec_per = cef.output_responses(output, cert, LLM)
-                summary_df = pd.DataFrame([[product_df["id"][0], product_df["name"][0], LLM, cert, passed, failed, na, rec_per, round(elapsed_time), 0]],
+                summary_df = pd.DataFrame([[product_df["id"].item(), product_df["name"].item(), LLM, cert, passed, failed, na, rec_per, round(elapsed_time), 0]],
                             columns = ["id", "product", "model", "cert", "mandates passed", "mandates failed", "mandates na", "percentage_passed", "time", "cost"])
 
                 cef.save_recommendation(st.session_state.sheet, summary_df, "summary")
