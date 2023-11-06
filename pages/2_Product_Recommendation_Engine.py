@@ -53,6 +53,9 @@ st.code(result, language=None)
 result = os.popen('python3 --version').read()
 st.code(result, language=None)
 
+result = os.popen('pip show openai').read()
+st.code(result, language=None)
+
 # list of folders in ./Datasets
 datasets = np.sort(next(os.walk("./Datasets"))[1])
 
