@@ -3,6 +3,6 @@ streamlit_js_eval
 cohere
 tiktoken
 replicate
-openai>=0.27.0
+openai==0.27.0
 gspread
 google-auth
