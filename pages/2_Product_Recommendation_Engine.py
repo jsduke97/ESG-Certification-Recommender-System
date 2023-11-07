@@ -86,7 +86,7 @@ cert = st.radio("ESG Certification:", ["TCO", "Energy Star"], horizontal = True,
 
 st.session_state.certs = [cert]
 
-st.session_state.tester = st.radio("Tester:", ["Jackson", "Nathan", "Sophia"], horizontal = True, index = 0)
+st.session_state.tester = st.radio("Tester:", ["Jackson", "Nathan", "Sofia"], horizontal = True, index = 0)
 
 st.divider()
 
