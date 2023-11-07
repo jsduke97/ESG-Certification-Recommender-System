@@ -80,7 +80,7 @@ api_keys = {"Cohere": cohere_key, "GPT-3.5": openai_key}
 
 st.divider()
 
-st.session_state.models = st.multiselect("LLM model (select all that apply)", ["Cohere", "GPT-3.5"], default = ["Cohere"]) # User can select both
+st.session_state.models = st.multiselect("LLM model (select all that apply)", ["Cohere", "GPT-3.5"], default = ["Cohere", "GPT-3.5"]) # User can select both
 
 cert = st.radio("ESG Certification:", ["TCO", "Energy Star"], horizontal = True, index = 0)
 
