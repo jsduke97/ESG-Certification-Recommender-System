@@ -108,7 +108,11 @@ def create_column_summary(in_path: str, file_type: str, out_dir: str, dataset_na
 
 
 @st.cache_data  
-def query_LLM(column_summary: pd.DataFrame, column_name: str, dataset_description: str, LLM: str, LLM_token: str):
+def query_LLM(column_summary: pd.DataFrame, column_name: str, dataset_description: str, LLM: str, LLM_token: str, demo: bool):
+
+    if demo:
+        time.sleep(.5)
+        return {"definition": "This is an example definition for demo purposes, to generate a definition using an LLM, please input the API keys."}
 
     if column_name not in column_summary["column_cleaned"].to_numpy():
         return -1

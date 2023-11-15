@@ -7,9 +7,12 @@ import data_dictionary_functions as ddf
 from streamlit_js_eval import streamlit_js_eval
 import json
 import time
+from google.oauth2 import service_account
+import gspread
 
 st.markdown('# Data Dictionary Creator')
 st.sidebar.markdown('Data Dictionary Creator')
+demo_toggle = st.sidebar.toggle("Demo Mode", True)
 
 if 'page' not in st.session_state:
     st.session_state.page = None
@@ -40,6 +43,14 @@ replicate_key = st.text_input("Replicate API Key", type = "password")
 api_keys = {"Cohere": cohere_key, "LLaMA2": replicate_key}
 
 st.divider()
+
+credentials = service_account.Credentials.from_service_account_info(
+    st.secrets["gcp_service_account"],
+    scopes=[
+        "https://www.googleapis.com/auth/spreadsheets",
+    ],
+)
+gc = gspread.authorize(credentials)
 
 col1, col2 = st.columns(2)
 with col1:
@@ -124,17 +135,42 @@ if st.session_state.page == "Review":
     st.header("Column Name Definitions for Notebooks Dataset")
     st.write("Select all rows for which you want to change the definition")
     # Example: Notebooks CSV storing the already cleaned column definitions 
-    path = './Data Dictionary Output/data_definitions.csv'
-    df_column_desc = pd.read_csv(path) 
+    if demo_toggle:
+        sheet_url = st.secrets["DD_spreadsheet"]
+        sheet = gc.open_by_url(sheet_url).get_worksheet(0)
+        df_column_desc = pd.DataFrame(sheet.get_all_values())
+        df_column_desc.columns = df_column_desc.iloc[0]
+        df_column_desc.drop(df_column_desc.index[0], inplace = True)
+        df_column_desc = df_column_desc[6:]
+        df_column_desc = df_column_desc[~df_column_desc["Column Name"].str.contains("unit")]
+    else:
+        path = './Data Dictionary Output/'+ selected_dataset + '/' + selected_dataset + '_Data_Dictionary.csv'
+        df_column_desc = pd.read_csv(path) 
     # Display dataset allowing users to navigate and click on desired column names they wish to change
-    gd = GridOptionsBuilder.from_dataframe(df_column_desc[['column_name','definition']])
+    gd = GridOptionsBuilder.from_dataframe(df_column_desc[['Column Name','Column Definition']])
     gd.configure_pagination(paginationAutoPageSize=False,paginationPageSize = 10)
     gd.configure_selection(selection_mode= 'multiple', use_checkbox = True)
+    gd.configure_grid_options(alwaysShowHorizontalScroll=True, enableRangeSelection=True, pagination=True, paginationPageSize=10000, domLayout='normal')
+    gd.configure_column("Column Definition", singleClickEdit = True, wrapText = True, width = 500, autoHeight = True)
     gridoptions = gd.build()
-    table = AgGrid(df_column_desc[['column_name','definition']], gridOptions = gridoptions, 
-                            update_mode = GridUpdateMode.SELECTION_CHANGED)
+    table = AgGrid(df_column_desc[['Column Name','Column Definition']], gridOptions = gridoptions, 
+                            update_mode = GridUpdateMode.SELECTION_CHANGED, height=500)
     # Store the selected rows 
-    st.session_state.selected_rows = table['selected_rows']
+    try:
+        st.session_state.selected_rows = df_column_desc.index[df_column_desc["Column Name"].isin(pd.DataFrame(table['selected_rows'])["Column Name"])].tolist()
+    except:
+        st.session_state.selected_rows = []
+
+    if st.button("Continue"):
+        #df_column_desc["Approved"] = ~df_column_desc["Column Name"].isin(st.session_state.selected_rows)
+        if demo_toggle:
+            for column_i in st.session_state.selected_rows:
+                sheet.update_cell(column_i + 1, 9, False)
+        
+        st.session_state.page = "Create"
+        st.rerun()
+
+
 
 # Data Dictionary Creator: If user clicks on Create New Definitions link
 if st.session_state.page == "Create":
@@ -143,8 +179,17 @@ if st.session_state.page == "Create":
     dataset_description = pd.read_csv(master_file_list_path)
     dataset_description = dataset_description[dataset_description["file_folder"] == selected_dataset].head(1)["file_description"][0]
 
-    data_dictionary = pd.read_csv("./Data Dictionary Output/" + selected_dataset + "/" + selected_dataset + "_Data_Dictionary.csv")
-    unapproved_columns = data_dictionary[data_dictionary["Approved"] == False]
+    if demo_toggle == True:
+        sheet_url = st.secrets["DD_spreadsheet"]
+        sheet = gc.open_by_url(sheet_url).get_worksheet(0)
+        data_dictionary = pd.DataFrame(sheet.get_all_values())
+        data_dictionary.columns = data_dictionary.iloc[0]
+        data_dictionary.drop(data_dictionary.index[0], inplace = True)
+        data_dictionary = data_dictionary[6:]
+        data_dictionary = data_dictionary[~data_dictionary["Column Name"].str.contains("unit")]
+    else:
+        data_dictionary = pd.read_csv("./Data Dictionary Output/" + selected_dataset + "/" + selected_dataset + "_Data_Dictionary.csv")
+    unapproved_columns = data_dictionary[data_dictionary["Approved"] == "FALSE"]
     
     selected_model = st.multiselect("LLM model (select all that apply)", ["Cohere", "LLaMA2"], default = ["Cohere", "LLaMA2"]) # User can select both
 
@@ -205,7 +250,8 @@ if st.session_state.page == "Create":
         with co_1:
             st.markdown("Cohere Definition")
 
-        co_definition = ddf.query_LLM(column_summary, column, dataset_description, "Cohere", api_keys["Cohere"])
+        
+        co_definition = ddf.query_LLM(column_summary, column, dataset_description, "Cohere", api_keys["Cohere"], demo_toggle)
 
         if co_definition == -1:
             co_definition = 'ID Column for the file. Definition not applicable.'
@@ -216,8 +262,11 @@ if st.session_state.page == "Create":
                 try:
                     co_definition = list(json.loads(co_definition).values())[0]
                 except:
-                    st.write(co_definition)
-                    co_definition = "Error"
+                    try: 
+                        co_definition = co_definition["definition"]
+                    except:
+                        st.write(co_definition)
+                        co_definition = "Error"
 
         with co_2:
             co_def_final = st.text_area("", co_definition, label_visibility="collapsed", height = 120)
@@ -228,12 +277,16 @@ if st.session_state.page == "Create":
         with la_1:
             st.markdown("LLaMA2 Definition")
 
-        la_definition = ddf.query_LLM(column_summary, column, dataset_description, "LLaMA2", api_keys["LLaMA2"])
+        
+        la_definition = ddf.query_LLM(column_summary, column, dataset_description, "LLaMA2", api_keys["LLaMA2"], demo_toggle)
 
         try:
             la_definition = json.loads(la_definition)["definition"]
         except:
-            definitla_definitionion = "Error"
+            try: 
+                la_definition = la_definition["definition"]
+            except:
+                la_definition = "Error"
 
         if la_definition == -1:
             la_definition = 'ID Column for the file. Definition not applicable.'
@@ -252,9 +305,14 @@ if st.session_state.page == "Create":
 
     with appr_2:
         if st.button("Approve", "approve_definition", use_container_width=True):
-            data_dictionary["Column Definition"][data_dictionary["Column Name"] == column] = definitions[definition_selection]
-            data_dictionary["Approved"][data_dictionary["Column Name"] == column] = True 
-            data_dictionary.to_csv("./Data Dictionary Output/" + selected_dataset + "/" + selected_dataset + "_Data_Dictionary.csv", index = False)
+            if demo_toggle:
+                column_i = data_dictionary.index[data_dictionary["Column Name"] == column].item()
+                sheet.update_cell(column_i + 1, 8, definitions[definition_selection])
+                sheet.update_cell(column_i + 1, 9, True)
+            else:
+                data_dictionary["Column Definition"][data_dictionary["Column Name"] == column] = definitions[definition_selection]
+                data_dictionary["Approved"][data_dictionary["Column Name"] == column] = True 
+                data_dictionary.to_csv("./Data Dictionary Output/" + selected_dataset + "/" + selected_dataset + "_Data_Dictionary.csv", index = False)
             st.session_state.page = "Create"
             st.rerun()
 

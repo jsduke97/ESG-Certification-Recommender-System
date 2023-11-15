@@ -129,7 +129,17 @@ def prepare_mandate_query(mandate_df: pd.DataFrame, product: pd.DataFrame):
     return mandate_header + mandate_description + product_name + product_attribute_string + final_query
 
 @st.cache_data  
-def query_LLM(mandate_df: pd.DataFrame, mandate_column_df: pd.DataFrame, product: pd.DataFrame, LLM: str, LLM_token: str):
+def query_LLM(mandate_df: pd.DataFrame, mandate_column_df: pd.DataFrame, product: pd.DataFrame, LLM: str, LLM_token: str, demo: bool, sheet: pd.DataFrame):
+
+    if demo: 
+        time.sleep(.1)
+        sheet = sheet[sheet["model"] == LLM]
+        sheet = sheet[sheet["Certification"] == mandate_column_df.iloc[0]["Certification"]]
+        sheet = sheet[sheet["Mandate Number"] == mandate_column_df.iloc[0]["Mandate Number"]]
+
+        return sheet["prompt"].item(), sheet["response"].item()
+
+
 
     payload = prepare_mandate_query(mandate_column_df, product)
 
@@ -201,6 +211,7 @@ def query_LLM(mandate_df: pd.DataFrame, mandate_column_df: pd.DataFrame, product
             else:
                 return prompt, "Error in OpenAI Response:{}".format(e)
 
+        #st.markdown(output['choices'][0]['message']['content'])
 
         return prompt, output['choices'][0]['message']['content']
 

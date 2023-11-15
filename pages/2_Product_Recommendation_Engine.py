@@ -14,6 +14,7 @@ import gspread
 
 st.markdown('# Product Recommendation Engine')
 st.sidebar.markdown('Product Certification Evaluator')
+demo_toggle = st.sidebar.toggle("Demo Mode", True)
 
 st.cache_data.clear()
 
@@ -73,6 +74,13 @@ gc = gspread.authorize(credentials)
 sheet_url = st.secrets["spreadsheet"]
 st.session_state.sheet = gc.open_by_url(sheet_url)
 
+if demo_toggle:
+    assessments = pd.DataFrame(st.session_state.sheet.get_worksheet(5).get_all_values())
+    assessments.columns = assessments.iloc[0]
+    assessments.drop(assessments.index[0], inplace = True)
+else:
+    assessments = None
+
 cohere_key = st.text_input("Cohere API Key", type = "password")
 openai_key = st.text_input("OpenAI API Key", type = "password")
 
@@ -80,13 +88,11 @@ api_keys = {"Cohere": cohere_key, "GPT-3.5": openai_key}
 
 st.divider()
 
-st.session_state.models = st.multiselect("LLM model (select all that apply)", ["Cohere", "GPT-3.5"], default = ["Cohere", "GPT-3.5"]) # User can select both
+st.session_state.models = st.multiselect("LLM model (select all that apply)", ["GPT-3.5", "Cohere"], default = ["GPT-3.5", "Cohere"]) # User can select both
 
-cert = st.radio("ESG Certification:", ["TCO", "Energy Star"], horizontal = True, index = 0)
+st.session_state.certs = st.multiselect("ESG Certification:", ["TCO", "Energy Star"], default = ["TCO", "Energy Star"])
 
-st.session_state.certs = [cert]
-
-st.session_state.tester = st.radio("Tester:", ["Jackson", "Nathan", "Sofia"], horizontal = True, index = 0)
+#st.session_state.tester = st.radio("Tester:", ["Jackson", "Nathan", "Sofia"], horizontal = True, index = 0)
 
 st.divider()
 
@@ -97,17 +103,18 @@ if st.session_state.certs[0] == "TCO":
 elif st.session_state.certs[0] == "Energy Star":
     products_df = pd.read_csv("./Datasets/" + selected_dataset + "/" + "test_ES.csv")
 
-product_list = cef.get_product_list(st.session_state.sheet, cert, st.session_state.tester)
-
-products_df = products_df[products_df["id"].isin(product_list)]
+if demo_toggle:
+    products_df = pd.read_csv("./Datasets/" + selected_dataset + "/" + selected_dataset + "_dataset_demo.csv")
+else:
+    products_df = pd.read_csv("./Datasets/" + selected_dataset + "/" + selected_dataset + "_dataset.csv")
 
 mandates_df = pd.read_csv("./Product Certification/certification_mandates_revised.csv")
 mandate_column_full_df = pd.read_csv("./Product Certification/" + selected_dataset + "/mandate_column_relevance_full.csv")
 
-st.session_state.product = st.multiselect("Product Search:", products_df["id"], max_selections= 1, default = [products_df["id"][products_df["id"].index[0]]]) # User can search for product
+st.session_state.product = st.multiselect("Product Search:", products_df["name"], max_selections= 1, default = [products_df["name"][products_df["name"].index[0]]]) # User can search for product
 
 if st.session_state.product != []:
-    product_df = products_df[products_df["id"] == st.session_state.product[0]]
+    product_df = products_df[products_df["name"] == st.session_state.product[0]]
 
 if st.session_state.product != []:
     st.button("Generate Recommendation", use_container_width = True, on_click=set_page, args=["Generate New"])
@@ -142,7 +149,7 @@ if st.session_state.page == "Generate New":
                 #st.dataframe(mandate_df)
                 #st.dataframe(mandate_column_df)
 
-                prompt, llm_response_full = cef.query_LLM(mandate_df, mandate_column_df, product_df, LLM, api_keys[LLM])
+                prompt, llm_response_full = cef.query_LLM(mandate_df, mandate_column_df, product_df, LLM, api_keys[LLM], demo_toggle, assessments)
 
                 if llm_response_full == "LIMIT RATE":
                     st.cache_data.clear()
@@ -187,18 +194,19 @@ if st.session_state.page == "Generate New":
                 cert_cols_i += 1
 
         with cert_cols[0]:
-            if np.min(output_data) >= 55:
+            if np.max(output_data) >= 50:
                 text_color = "green"
                 recommendation = "##### Good Candidate"
             else:
                 text_color = "red"
                 recommendation = "##### Not a Good Candidate"
             st.markdown("##### :{}[{}]".format(text_color, cert)) 
-            st.markdown("##### :{}[{}%]".format(text_color, np.min(output_data))) 
+            st.markdown("##### :{}[{}%]".format(text_color, np.max(output_data))) 
             st.markdown(recommendation)
 
     st.markdown("Details:")
-    st.dataframe(st.session_state.rec)
+    st.dataframe(st.session_state.rec[["name", "Certification", "Mandate Number", "Mandate title", 
+                                       "Mandate Description", "response", "recommendation", "model"]])
 
     st.button("Export", 
             use_container_width = True, 
